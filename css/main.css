@@ -1,0 +1,28 @@
+.container {
+  max-width: 1550px;
+}
+
+header {
+  background-color: #EEEEEE;
+}
+
+.header-icon-margin {
+  margin-right: 15px;
+}
+.header-top {
+  height: 46px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #242424;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.email a {
+  color: #242424;
+  text-decoration: none;
+}
