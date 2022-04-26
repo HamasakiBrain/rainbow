@@ -2,8 +2,8 @@
   max-width: 1550px;
 }
 
-header {
-  background-color: #EEEEEE;
+body {
+  font-family: "Nunito", sans-serif;
 }
 
 .header-icon-margin {
@@ -21,8 +21,115 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+.header-top-bg {
+  background-color: #EEEEEE;
+}
+.header-top-bottom {
+  padding: 50px 0 0 0;
+  background: #f8f8f8;
+}
+.header-top-bottom_links {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+.header-top-bottom_links a {
+  display: block;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #858585;
+  padding: 10px;
+  transition: 0.3s all;
+}
+.header-top-bottom_links a:hover {
+  color: #242424;
+}
+.header-top-bottom_links a.active {
+  border-top: 1px solid #E7E7E7;
+  color: #242424;
+}
+.header-navs {
+  display: flex;
+  padding-left: 20px;
+}
+.header-navs-items {
+  display: flex;
+  max-width: 370px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-navs .btn-sale {
+  margin-right: 65px;
+}
 
 .email a {
   color: #242424;
   text-decoration: none;
+}
+
+.search-form {
+  max-width: 493px;
+  padding: 8px 0;
+  background: #fff;
+  height: 53px;
+  box-shadow: 0px 3px 24px rgba(0, 0, 0, 0.02);
+  transform: translateX(-20px);
+}
+
+.search-button {
+  background: transparent;
+  position: relative;
+  left: -10px;
+  z-index: 10;
+  margin-right: 8px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.btn-sale {
+  font-family: "Nunito", sans-serif;
+  border: 1px solid #242424;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: #242424;
+  padding: 11px 27px;
+}
+
+.custom-input {
+  padding-left: 10px;
+  margin-left: 20px;
+}
+
+.custom-select {
+  background: #fff url("data:image/svg+xml,%3Csvg width='6' height='5' viewBox='0 0 6 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 5L5.88675 1.26184e-07L0.113249 -1.26184e-07L3 5Z' fill='%23646464'/%3E%3C/svg%3E%0A") right 0.65rem center/8px 10px no-repeat;
+  background-position-y: 16px;
+  padding-left: 17px;
+}
+
+.catalog-input {
+  position: relative;
+}
+.catalog-input:after {
+  content: "";
+  width: 1px;
+  height: 31px;
+  display: block;
+  right: -10px;
+  top: 3px;
+  z-index: 2;
+  background-color: #A19B9B;
+  position: absolute;
+}
+
+*:focus {
+  outline: 0;
+  box-shadow: none !important;
 }
