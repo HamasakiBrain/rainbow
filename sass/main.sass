@@ -1,6 +1,10 @@
 @import "vars"
+html
+  scroll-behavior: smooth
 body
   font-family: $nunito
+  overflow-x: hidden
+
 .header
   &-icon
     &-margin
@@ -19,11 +23,11 @@ body
     &-bg
       background-color: #EEEEEE
     &-bottom
-      padding: 50px 0 0 0
+      //padding: 50px 0 0 0
       background: #f8f8f8
       &_links
         display: flex
-        margin-top: 50px
+        //margin-top: 50px
         justify-content: space-between
         a
           display: block
@@ -35,8 +39,10 @@ body
           color: #858585
           padding: 10px
           transition: .3s all
+          border-top: 1px solid transparent
           &:hover
             color: $dark
+            border-top: 1px solid #E7E7E7
           &.active
             border-top: 1px solid #E7E7E7
             color: $dark
@@ -110,3 +116,281 @@ a
 *:focus
   outline: 0
   box-shadow: none !important
+
+.slides
+  height: 823px
+  max-height: 100%
+  .slide
+    background-size: 100%
+    background-repeat: no-repeat
+    height: 823px
+    max-height: 100%
+    &-content
+      height: 100%
+    &-title
+      font-family: $palatino
+      font-style: normal
+      font-weight: 400
+      font-size: 96px
+      line-height: 130px
+      color: #FFFFFF
+    &-btn
+      border: 1px solid #fff
+      padding: 12px 0
+      font-family: $nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 24px
+      line-height: 33px
+      text-align: center
+      color: #FFFFFF
+      min-width: 237px
+      display: block
+      max-width: max-content
+
+
+.section
+  padding: 100px 0 0 0
+  &-recomendation
+    padding: 74px 0 0 0
+  &_title
+    font-family: $palatino
+    font-style: normal
+    font-weight: 400
+    font-size: 36px
+    line-height: 49px
+    color: #000000
+    margin-bottom: 60px
+    &.bordered
+      position: relative
+      &:after, &:before
+        content: ""
+        width: calc(100% - 55.5%)
+        height: 1px
+        position: absolute
+        background: #D1D1D1
+        top: 50%
+      &:after
+        right: -200px
+      &:before
+        left: -200px
+.catalog.items
+  .item
+    max-width: 302px
+    &-border
+      border: 1px solid #EFEFEF
+      text-align: center
+      padding: 10px 0
+    &_articul
+      font-family: $nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 10px
+      line-height: 14px
+      color: #646464
+    &_name
+      max-width: 196px
+      margin: 2px auto 0
+      font-family: $nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 22px
+      color: $dark
+    &_old_price
+      margin-top: 10px
+      font-family: $nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 14px
+      line-height: 19px
+      text-decoration-line: line-through
+      color: #646464
+    &_new_price
+      font-family: $nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 20px
+      line-height: 27px
+      color: $dark
+.add-cart > svg
+  margin-left: 32px
+.swiper-button-disabled
+  display: none
+.swiper-button-next, .swiper-button-prev
+  width: 120px
+  right: 210px
+  &:after
+    content: ''
+
+.swiper-horizontal > .swiper-scrollbar
+  background: #A19B9B
+  height: 1px
+  bottom: 5px
+  width: 100%
+  left: 0
+.swiper-scrollbar-drag
+  height: 5px
+  top: -2px
+  background: $dark
+  border-radius: 0
+
+.catalog-slides
+  padding-bottom: 25px
+.categories
+  &_item
+    background-size: 100%
+    background-repeat: no-repeat
+    display: block
+    max-height: 100%
+    height: 340px
+    padding-left: 30px
+    padding-top: 230px
+  &_name, &_description
+    font-weight: 400
+    font-style: normal
+    color: #FFFFFF
+  &_name
+    font-family: $palatino
+    font-size: 40px
+    line-height: 54px
+  &_description
+    font-family: $nunito
+    font-size: 16px
+    line-height: 22px
+
+
+.trends
+  padding-bottom: 30px
+  .item
+    max-width: 283px
+    &_brand
+      margin-top: 20px
+      font-family: $palatino
+      font-style: normal
+      font-weight: 400
+      font-size: 24px
+      line-height: 32px
+      color: #000000
+    &_category
+      font-family: $nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 22px
+      color: $dark
+      margin-top: 5px
+
+
+video
+  width: 100%
+  max-height: 670px
+  object-fit: cover
+
+.video
+  &-section
+    position: relative
+    max-height: 670px
+  &-content
+    top: calc(100%/2 - 150px)
+    position: absolute
+  &_title
+    font-family: $palatino
+    font-style: normal
+    font-weight: 400
+    font-size: 36px
+    line-height: 49px
+    color: $dark
+  &_description
+    margin-top: 20px
+    max-width: 652px
+    font-family: $nunito
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 22px
+    color: $dark
+  &_btn
+    margin-top: 40px
+    display: block
+    max-width: max-content
+    padding: 14px 0
+    min-width: 212px
+    background: $dark
+    color: #FFFFFF
+    text-align: center
+    font-family: $nunito
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 22px
+    transition: .3s all
+    &:hover
+      background-color: #fff
+      color: $dark
+
+.blend-mode-video
+  width: 100%
+  height: 100%
+  background: rgba(203,198,197, .5)
+  position: absolute
+  top: 0
+  mix-blend-mode: multiply
+  pointer-events: none
+  left: 0
+
+.actual
+  display: flex
+  flex-wrap: wrap
+  .item
+    max-width: 504px
+    width: 100%
+    &_title
+      text-align: center
+      margin-top: 15px
+      font-family: $palatino
+      font-style: normal
+      font-weight: 400
+      font-size: 36px
+      line-height: 49px
+      color: #000000
+    &_description
+      font-family: $nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 22px
+      text-align: center
+      color: $dark
+
+
+.how_work
+  background: #F8F8F8
+  margin-top: 100px
+  &_wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+  &_title
+    margin-top: 75px
+    font-family: $palatino
+    font-style: normal
+    font-weight: 400
+    font-size: 36px
+    line-height: 49px
+    color: $dark
+  &_description
+    margin: 20px 0
+    font-family: $nunito
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+    color: $dark
+    max-width: 814px
+
+
+#sticker
+  background-color: #F8F8F8
+  padding: 50px 0
