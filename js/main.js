@@ -30,6 +30,8 @@ $(document).ready(function () {
 
     let swiper = new Swiper('.slides', {
         loop: false,
+        speed: 1200,
+        parallax: true,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -40,6 +42,10 @@ $(document).ready(function () {
                     el: ".swiper-pagination",
                     clickable: true,
                 },
+                speed: 700
+            },
+            990: {
+                speed: 1200
             }
         }
     })
@@ -47,14 +53,12 @@ $(document).ready(function () {
         $(".swiper-pagination").removeClass('d-none')
         $(".actual .item_img").each(function (index, e){
             let img = $(e).find('img')
-            // console.log($(e).css("background", "red"))
             $(e).css('background-image', "url("+img.attr('src')+")")
             img.remove()
-            // let img = $(e).find('img')
-            // img.parent().style.backgroundColor = "#131313"
-            // img.parent('.item_img').css("background-image:", " url("+img.attr('src')+")")
-            // img.remove()
         })
+        // $(".footer-two-container a.wrap").contents().unwrap().wrap('<div class="chlen">')
+        $(".footer-two-container").prepend(`<div class="d w-50"></div>`)
+        $(".footer-two-container .d").append($("a.wrap"))
     } else {
         $(".swiper-scrollbar").removeClass('d-none')
     }
@@ -64,7 +68,6 @@ $(document).ready(function () {
         freeMode: true,
         slidesPerView: 5,
         spaceBetween: 20,
-
         scrollbar: {
             el: '.swiper-scrollbar',
             dragSize: 147
@@ -74,8 +77,12 @@ $(document).ready(function () {
                 slidesPerView: 2.2,
                 spaceBetween: 5,
             },
-            990: {
+            540: {
                 slidesPerView: 5,
+                spaceBetween: 5,
+            },
+            990: {
+                slidesPerView: 5.3,
                 spaceBetween: 20,
             }
         }
