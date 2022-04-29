@@ -23,12 +23,15 @@ $(document).ready(function () {
             // },
             scrollbar: {
                 el: '.swiper-scrollbar',
-                dragSize: 215
+                dragSize: 215,
+                draggable: true,
             },
         });
+
     }
 
     let swiper = new Swiper('.slides', {
+
         loop: false,
         speed: 1200,
         parallax: true,
@@ -59,6 +62,10 @@ $(document).ready(function () {
         // $(".footer-two-container a.wrap").contents().unwrap().wrap('<div class="chlen">')
         $(".footer-two-container").prepend(`<div class="d w-50"></div>`)
         $(".footer-two-container .d").append($("a.wrap"))
+        const howWork = new Swiper('.how_work-padding', {
+            autoplay: true,
+            // freeMode: true,
+        });
     } else {
         $(".swiper-scrollbar").removeClass('d-none')
     }
@@ -70,7 +77,8 @@ $(document).ready(function () {
         spaceBetween: 20,
         scrollbar: {
             el: '.swiper-scrollbar',
-            dragSize: 147
+            dragSize: 147,
+            draggable: true,
         },
         breakpoints: {
             320: {

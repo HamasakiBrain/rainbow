@@ -51,6 +51,13 @@
           width: 100%
       &:nth-child(n+5)
         display: none
+      &_name
+        font-size: 14px
+        line-height: 19px
+        max-width: 144px
+      &_new_price
+        font-size: 17px
+        line-height: 23px
   .catalog-slides
     padding-bottom: 0
   .pad
@@ -100,7 +107,7 @@
       top: 0
       left: 0
       padding: 50px 20px
-      background: rgba(255, 255, 255, .5)
+
       height: 100%
     &_title
       font-size: 24px
@@ -143,7 +150,14 @@
   .how_work
     margin-top: 0
     &_content
-      flex-wrap: wrap
+      justify-content: unset
+      text-align: center
+    &_item
+      max-width: 100% !important
+      width: 100%
+      padding: 0 15px
+      &:after
+        content: unset
 
     &_wrapper
       padding: 45px 0

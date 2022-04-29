@@ -765,6 +765,15 @@ label.custom-radio span:before {
   .catalog.items .item:nth-child(n+5) {
     display: none;
   }
+  .catalog.items .item_name {
+    font-size: 14px;
+    line-height: 19px;
+    max-width: 144px;
+  }
+  .catalog.items .item_new_price {
+    font-size: 17px;
+    line-height: 23px;
+  }
 
   .catalog-slides {
     padding-bottom: 0;
@@ -834,7 +843,6 @@ label.custom-radio span:before {
     top: 0;
     left: 0;
     padding: 50px 20px;
-    background: rgba(255, 255, 255, 0.5);
     height: 100%;
   }
   .video_title {
@@ -889,7 +897,16 @@ label.custom-radio span:before {
     margin-top: 0;
   }
   .how_work_content {
-    flex-wrap: wrap;
+    justify-content: unset;
+    text-align: center;
+  }
+  .how_work_item {
+    max-width: 100% !important;
+    width: 100%;
+    padding: 0 15px;
+  }
+  .how_work_item:after {
+    content: unset;
   }
   .how_work_wrapper {
     padding: 45px 0;
