@@ -10,13 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
           rel="stylesheet">
-    <link href="//db.onlinewebfonts.com/c/6a0482275e06b01d85575eb3b9894566?family=Palatino+Linotype" rel="stylesheet"
-          type="text/css"/>
+
     <link
             rel="stylesheet"
             href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/custom.css?v=5">
+    <link rel="stylesheet" href="css/main.css?v=22">
     <title>Rainbow</title>
 </head>
 <body>
@@ -163,7 +163,10 @@
                 </div>
             </div>
         </div>
+        <div class="swiper-pagination d-none"></div>
+
         <!-- If we need navigation buttons -->
+
         <div class="swiper-button-prev">
             <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="60" cy="60" r="59.5" transform="rotate(180 60 60)" stroke="white"/>
@@ -179,9 +182,10 @@
                       stroke-linejoin="bevel"/>
             </svg>
         </div>
+
     </div>
     <div class="container">
-        <div class="section">
+        <div class="section pad">
             <div class="section_title text-center">
                 Новые поступления
             </div>
@@ -367,118 +371,167 @@
                <div class="swiper-scrollbar"></div>
            </div>
         </div>
-        <div class="section">
-            <div class="d-flex flex-wrap">
-                <div class="categories_item w-50" style="background-image: url('img/categories_item.png')">
-                    <div class="categories_name">Украшения</div>
-                    <div class="categories_description">Что может быть лучше золота?</div>
-                </div>
-                <div class="categories_item w-50" style="background-image: url('img/categories_item2.png')">
-                    <div class="categories_name">BALENCIAGA</div>
-                    <div class="categories_description">Новые и не только коллекции</div>
-                </div>
-                <div class="categories_item w-50" style="background-image: url('img/categories_item3.png')">
-                    <div class="categories_name">COSMETICTREND</div>
-                    <div class="categories_description">Косметика в тренде</div>
-                </div>
-                <div class="categories_item w-50" style="background-image: url('img/categories_item4.png')">
-                    <div class="categories_name">ТРЕНЧ BURBERRY</div>
-                    <div class="categories_description">Желанный, универсальный, сказочный</div>
-                </div>
-            </div>
-        </div>
-        <div class="section">
+    </div>
+   <div class="container mobile-100">
+       <div class="section">
+           <div class="categ-blocks">
+               <div class="categories_item" style="background-image: url('img/categories_item.png')">
+                   <div class="categories_name">Украшения</div>
+                   <div class="categories_description">Что может быть лучше золота?</div>
+               </div>
+               <div class="categories_item" style="background-image: url('img/categories_item2.png')">
+                   <div class="categories_name">BALENCIAGA</div>
+                   <div class="categories_description">Новые и не только коллекции</div>
+               </div>
+               <div class="categories_item" style="background-image: url('img/categories_item3.png')">
+                   <div class="categories_name">COSMETICTREND</div>
+                   <div class="categories_description">Косметика в тренде</div>
+               </div>
+               <div class="categories_item" style="background-image: url('img/categories_item4.png')">
+                   <div class="categories_name">ТРЕНЧ BURBERRY</div>
+                   <div class="categories_description">Желанный, универсальный, сказочный</div>
+               </div>
+           </div>
+       </div>
+   </div>
+    <div class="container mobile-100">
+        <div class="section pat">
             <div class="section_title text-center bordered">Мировые тренды</div>
             <div class="swiper trends">
-              <div class="swiper-wrapper">
-                  <div class="swiper-slide item">
-                      <div class="item_img">
-                          <img src="img/trends_item.png" alt="">
-                      </div>
-                      <div class="item_brand">CHANEL</div>
-                      <div class="item_category">Сумки</div>
-                  </div>
-                  <div class="swiper-slide item">
-                      <div class="item_img">
-                          <img src="img/trends_item.png" alt="">
-                      </div>
-                      <div class="item_brand">CHANEL</div>
-                      <div class="item_category">Сумки</div>
-                  </div>
-                  <div class="swiper-slide item">
-                      <div class="item_img">
-                          <img src="img/trends_item.png" alt="">
-                      </div>
-                      <div class="item_brand">CHANEL</div>
-                      <div class="item_category">Сумки</div>
-                  </div>
-                  <div class="swiper-slide item">
-                      <div class="item_img">
-                          <img src="img/trends_item.png" alt="">
-                      </div>
-                      <div class="item_brand">CHANEL</div>
-                      <div class="item_category">Сумки</div>
-                  </div>
-                  <div class="swiper-slide item">
-                      <div class="item_img">
-                          <img src="img/trends_item.png" alt="">
-                      </div>
-                      <div class="item_brand">CHANEL</div>
-                      <div class="item_category">Сумки</div>
-                  </div>
-                  <div class="swiper-slide item">
-                      <div class="item_img">
-                          <img src="img/trends_item.png" alt="">
-                      </div>
-                      <div class="item_brand">CHANEL</div>
-                      <div class="item_category">Сумки</div>
-                  </div>
-                  <div class="swiper-slide item">
-                      <div class="item_img">
-                          <img src="img/trends_item.png" alt="">
-                      </div>
-                      <div class="item_brand">CHANEL</div>
-                      <div class="item_category">Сумки</div>
-                  </div>
-                  <div class="swiper-slide item">
-                      <div class="item_img">
-                          <img src="img/trends_item.png" alt="">
-                      </div>
-                      <div class="item_brand">CHANEL</div>
-                      <div class="item_category">Сумки</div>
-                  </div>
-                  <div class="swiper-slide item">
-                      <div class="item_img">
-                          <img src="img/trends_item.png" alt="">
-                      </div>
-                      <div class="item_brand">CHANEL</div>
-                      <div class="item_category">Сумки</div>
-                  </div>
-                  <div class="swiper-slide item">
-                      <div class="item_img">
-                          <img src="img/trends_item.png" alt="">
-                      </div>
-                      <div class="item_brand">CHANEL</div>
-                      <div class="item_category">Сумки</div>
-                  </div>
-                  <div class="swiper-slide item">
-                      <div class="item_img">
-                          <img src="img/trends_item.png" alt="">
-                      </div>
-                      <div class="item_brand">CHANEL</div>
-                      <div class="item_category">Сумки</div>
-                  </div>
-                  <div class="swiper-slide item">
-                      <div class="item_img">
-                          <img src="img/trends_item.png" alt="">
-                      </div>
-                      <div class="item_brand">CHANEL</div>
-                      <div class="item_category">Сумки</div>
-                  </div>
-              </div>
-            <div class="swiper-scrollbar"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/trends_item.png" alt="">
+                        </div>
+                        <div class="item_brand">CHANEL</div>
+                        <div class="item_category">Сумки</div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/trends_item.png" alt="">
+                        </div>
+                        <div class="item_brand">CHANEL</div>
+                        <div class="item_category">Сумки</div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/trends_item.png" alt="">
+                        </div>
+                        <div class="item_brand">CHANEL</div>
+                        <div class="item_category">Сумки</div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/trends_item.png" alt="">
+                        </div>
+                        <div class="item_brand">CHANEL</div>
+                        <div class="item_category">Сумки</div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/trends_item.png" alt="">
+                        </div>
+                        <div class="item_brand">CHANEL</div>
+                        <div class="item_category">Сумки</div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/trends_item.png" alt="">
+                        </div>
+                        <div class="item_brand">CHANEL</div>
+                        <div class="item_category">Сумки</div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/trends_item.png" alt="">
+                        </div>
+                        <div class="item_brand">CHANEL</div>
+                        <div class="item_category">Сумки</div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/trends_item.png" alt="">
+                        </div>
+                        <div class="item_brand">CHANEL</div>
+                        <div class="item_category">Сумки</div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/trends_item.png" alt="">
+                        </div>
+                        <div class="item_brand">CHANEL</div>
+                        <div class="item_category">Сумки</div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/trends_item.png" alt="">
+                        </div>
+                        <div class="item_brand">CHANEL</div>
+                        <div class="item_category">Сумки</div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/trends_item.png" alt="">
+                        </div>
+                        <div class="item_brand">CHANEL</div>
+                        <div class="item_category">Сумки</div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/trends_item.png" alt="">
+                        </div>
+                        <div class="item_brand">CHANEL</div>
+                        <div class="item_category">Сумки</div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/trends_item.png" alt="">
+                        </div>
+                        <div class="item_brand">CHANEL</div>
+                        <div class="item_category">Сумки</div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/trends_item.png" alt="">
+                        </div>
+                        <div class="item_brand">CHANEL</div>
+                        <div class="item_category">Сумки</div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/trends_item.png" alt="">
+                        </div>
+                        <div class="item_brand">CHANEL</div>
+                        <div class="item_category">Сумки</div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/trends_item.png" alt="">
+                        </div>
+                        <div class="item_brand">CHANEL</div>
+                        <div class="item_category">Сумки</div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/trends_item.png" alt="">
+                        </div>
+                        <div class="item_brand">CHANEL</div>
+                        <div class="item_category">Сумки</div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/trends_item.png" alt="">
+                        </div>
+                        <div class="item_brand">CHANEL</div>
+                        <div class="item_category">Сумки</div>
+                    </div>
+
+                </div>
+                <div class="swiper-scrollbar d-none"></div>
             </div>
         </div>
+    </div>
+    <div class="container">
         <div class="section  section-recomendation">
             <div class="section_title text-center">
                 Рекомендации от Rainbow
@@ -665,13 +718,12 @@
                 <div class="swiper-scrollbar"></div>
             </div>
         </div>
-
     </div>
     <div class="video">
         <div class="section">
             <div class="video-section">
                <video autoplay muted loop id="video">
-                   <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+                   <source src="video/1.mp4" type="video/mp4">
                </video>
                <div class="blend-mode-video"></div>
                 <div class="container">
@@ -691,7 +743,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container mobile-p-0">
         <div class="section">
             <div class="section_title text-center">
                 Актуально
@@ -701,22 +753,28 @@
                     <div class="item_img">
                         <img src="img/actual.png" alt="">
                     </div>
-                    <div class="item_title">Hermes Seller</div>
-                    <div class="item_description">Лучшее из “запретного”</div>
+                   <div class="mobile-top">
+                       <div class="item_title">Hermes Seller</div>
+                       <div class="item_description">Лучшее из “запретного”</div>
+                   </div>
                 </div>
                 <div class="item">
                     <div class="item_img">
                         <img src="img/actual1.png" alt="">
                     </div>
-                    <div class="item_title">Manolo Blahnik</div>
-                    <div class="item_description">Культовые лодочки</div>
+                   <div class="mobile-top">
+                       <div class="item_title">Manolo Blahnik</div>
+                       <div class="item_description">Культовые лодочки</div>
+                   </div>
                 </div>
                 <div class="item">
                     <div class="item_img">
                         <img src="img/actual2.png" alt="">
                     </div>
-                    <div class="item_title">Madrid</div>
-                    <div class="item_description">Лучшие предложения бутика</div>
+                    <div class="mobile-top">
+                        <div class="item_title">Madrid</div>
+                        <div class="item_description">Лучшие предложения бутика</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -726,15 +784,138 @@
            <div class="how_work_wrapper">
                <div class="how_work_title">Как работает сервис?</div>
                <div class="how_work_description">Мы долго и тщательно изучали опыт наших пользователей и опыт зарубежных магазинов, чтобы сделать RAINBOW тем самым магазином, который предоставляем всем пользователям безопасность и быстроту сделки, простоту в использовании для покупки и перепродажи брендовых вещей.Мы гарантируем подлинность каждой вещи, которую вы у нас покупаете.</div>
-
+                <div class="how_work_buttons">
+                    <a href="#" class="video_btn active">Для покупателей</a>
+                    <a href="#" class="video_btn">Для продавцов</a>
+                </div>
            </div>
         </div>
     </div>
+    <div class="how_work-padding">
+        <div class="how_work_content">
+            <div class="how_work_item">
+                <div class="how_work_item-image">
+                    <svg width="41" height="36" viewBox="0 0 41 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M41 30.4994V31.2906C40.7853 31.8078 40.6489 32.3768 40.3399 32.8315C39.6414 33.8596 38.5735 34.1985 37.3545 34.1977C28.3262 34.1924 19.2979 34.1915 10.2696 34.1949H9.66687V36H0V19.0437H7.19794V0H37.7139V27.6387C37.8574 27.6662 37.9725 27.698 38.0896 27.7091C38.7302 27.7764 39.3351 28.0341 39.8243 28.448C40.4888 28.9823 40.7952 29.7111 41 30.4994ZM35.1873 27.6597V2.50049H25.742V8.19062H18.3992V2.48686H9.71372V22.3738C9.92265 22.2875 10.0919 22.2167 10.2619 22.1476C12.0735 21.4111 13.8694 20.6337 15.7011 19.9496C17.7836 19.1709 20.0247 18.8962 22.2368 19.1485C23.8803 19.3288 25.5146 19.5916 27.1529 19.8182C29.4212 20.132 30.7397 22.2172 30.0277 24.3643C29.5846 25.7005 28.2542 26.6075 26.6888 26.6198C25.3267 26.6305 23.9644 26.6218 22.6021 26.6223C22.0513 26.6225 21.7727 26.8022 21.7788 27.1511C21.7848 27.4991 22.0483 27.6595 22.6183 27.6596C26.665 27.6598 30.7117 27.6599 34.7584 27.6597H35.1873ZM9.69702 31.6774C9.82019 31.6873 9.92342 31.7029 10.0267 31.7029C19.1889 31.704 28.3511 31.7039 37.5133 31.7026C38.1162 31.7025 38.478 31.4087 38.4847 30.9371C38.4914 30.4652 38.1307 30.1638 37.5345 30.1448C37.4277 30.1414 37.3208 30.1438 37.2139 30.1438C34.8633 30.1438 32.5126 30.1438 30.162 30.1438C27.6244 30.1438 25.0866 30.1272 22.5491 30.149C20.5809 30.1659 19.4512 28.8411 19.2987 27.4976C19.09 25.6596 20.4533 24.1828 22.3899 24.1554C23.7653 24.1358 25.1412 24.1569 26.5168 24.1456C26.7555 24.1485 26.9926 24.1061 27.215 24.0205C27.6003 23.8584 27.7734 23.4594 27.7014 23.0339C27.6321 22.6246 27.3085 22.347 26.7984 22.2713C25.7825 22.1205 24.761 22.0013 23.7506 21.8205C21.105 21.3471 18.5096 21.4527 15.9989 22.4629C13.9621 23.2824 11.9446 24.1488 9.91437 24.9844C9.69102 25.0763 9.67401 25.2209 9.67437 25.418C9.67806 27.3961 9.67867 29.3743 9.67619 31.3524C9.67622 31.4546 9.68898 31.5569 9.69702 31.6774ZM2.49562 33.4988H7.15627V21.5669H2.49562V33.4988ZM23.2119 2.48899H20.9789V5.71919H23.2119V2.48899Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="how_work_item-title">Отправка товара</div>
+                <div class="how_work_item-text">После проверки курьер привозит посылку прямо к вашей двери в течении 7 дней. За доставкой можно следить по трек-номеру заказа.</div>
+            </div>
+            <div class="how_work_item">
+                <div class="how_work_item-image">
+                    <svg width="41" height="36" viewBox="0 0 41 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M41 30.4994V31.2906C40.7853 31.8078 40.6489 32.3768 40.3399 32.8315C39.6414 33.8596 38.5735 34.1985 37.3545 34.1977C28.3262 34.1924 19.2979 34.1915 10.2696 34.1949H9.66687V36H0V19.0437H7.19794V0H37.7139V27.6387C37.8574 27.6662 37.9725 27.698 38.0896 27.7091C38.7302 27.7764 39.3351 28.0341 39.8243 28.448C40.4888 28.9823 40.7952 29.7111 41 30.4994ZM35.1873 27.6597V2.50049H25.742V8.19062H18.3992V2.48686H9.71372V22.3738C9.92265 22.2875 10.0919 22.2167 10.2619 22.1476C12.0735 21.4111 13.8694 20.6337 15.7011 19.9496C17.7836 19.1709 20.0247 18.8962 22.2368 19.1485C23.8803 19.3288 25.5146 19.5916 27.1529 19.8182C29.4212 20.132 30.7397 22.2172 30.0277 24.3643C29.5846 25.7005 28.2542 26.6075 26.6888 26.6198C25.3267 26.6305 23.9644 26.6218 22.6021 26.6223C22.0513 26.6225 21.7727 26.8022 21.7788 27.1511C21.7848 27.4991 22.0483 27.6595 22.6183 27.6596C26.665 27.6598 30.7117 27.6599 34.7584 27.6597H35.1873ZM9.69702 31.6774C9.82019 31.6873 9.92342 31.7029 10.0267 31.7029C19.1889 31.704 28.3511 31.7039 37.5133 31.7026C38.1162 31.7025 38.478 31.4087 38.4847 30.9371C38.4914 30.4652 38.1307 30.1638 37.5345 30.1448C37.4277 30.1414 37.3208 30.1438 37.2139 30.1438C34.8633 30.1438 32.5126 30.1438 30.162 30.1438C27.6244 30.1438 25.0866 30.1272 22.5491 30.149C20.5809 30.1659 19.4512 28.8411 19.2987 27.4976C19.09 25.6596 20.4533 24.1828 22.3899 24.1554C23.7653 24.1358 25.1412 24.1569 26.5168 24.1456C26.7555 24.1485 26.9926 24.1061 27.215 24.0205C27.6003 23.8584 27.7734 23.4594 27.7014 23.0339C27.6321 22.6246 27.3085 22.347 26.7984 22.2713C25.7825 22.1205 24.761 22.0013 23.7506 21.8205C21.105 21.3471 18.5096 21.4527 15.9989 22.4629C13.9621 23.2824 11.9446 24.1488 9.91437 24.9844C9.69102 25.0763 9.67401 25.2209 9.67437 25.418C9.67806 27.3961 9.67867 29.3743 9.67619 31.3524C9.67622 31.4546 9.68898 31.5569 9.69702 31.6774ZM2.49562 33.4988H7.15627V21.5669H2.49562V33.4988ZM23.2119 2.48899H20.9789V5.71919H23.2119V2.48899Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="how_work_item-title">Проверка подлинности</div>
+                <div class="how_work_item-text">Мы забираем товар у продавца и проверяем его с нашими экспертами. Только после проверки товар направляется к вам. Так же, мы прикрепляем к вашей посылке сертификат подлинности и качества RAINBOW.</div>
+            </div>
+            <div class="how_work_item">
+                <div class="how_work_item-image">
+                    <svg width="41" height="36" viewBox="0 0 41 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M41 30.4994V31.2906C40.7853 31.8078 40.6489 32.3768 40.3399 32.8315C39.6414 33.8596 38.5735 34.1985 37.3545 34.1977C28.3262 34.1924 19.2979 34.1915 10.2696 34.1949H9.66687V36H0V19.0437H7.19794V0H37.7139V27.6387C37.8574 27.6662 37.9725 27.698 38.0896 27.7091C38.7302 27.7764 39.3351 28.0341 39.8243 28.448C40.4888 28.9823 40.7952 29.7111 41 30.4994ZM35.1873 27.6597V2.50049H25.742V8.19062H18.3992V2.48686H9.71372V22.3738C9.92265 22.2875 10.0919 22.2167 10.2619 22.1476C12.0735 21.4111 13.8694 20.6337 15.7011 19.9496C17.7836 19.1709 20.0247 18.8962 22.2368 19.1485C23.8803 19.3288 25.5146 19.5916 27.1529 19.8182C29.4212 20.132 30.7397 22.2172 30.0277 24.3643C29.5846 25.7005 28.2542 26.6075 26.6888 26.6198C25.3267 26.6305 23.9644 26.6218 22.6021 26.6223C22.0513 26.6225 21.7727 26.8022 21.7788 27.1511C21.7848 27.4991 22.0483 27.6595 22.6183 27.6596C26.665 27.6598 30.7117 27.6599 34.7584 27.6597H35.1873ZM9.69702 31.6774C9.82019 31.6873 9.92342 31.7029 10.0267 31.7029C19.1889 31.704 28.3511 31.7039 37.5133 31.7026C38.1162 31.7025 38.478 31.4087 38.4847 30.9371C38.4914 30.4652 38.1307 30.1638 37.5345 30.1448C37.4277 30.1414 37.3208 30.1438 37.2139 30.1438C34.8633 30.1438 32.5126 30.1438 30.162 30.1438C27.6244 30.1438 25.0866 30.1272 22.5491 30.149C20.5809 30.1659 19.4512 28.8411 19.2987 27.4976C19.09 25.6596 20.4533 24.1828 22.3899 24.1554C23.7653 24.1358 25.1412 24.1569 26.5168 24.1456C26.7555 24.1485 26.9926 24.1061 27.215 24.0205C27.6003 23.8584 27.7734 23.4594 27.7014 23.0339C27.6321 22.6246 27.3085 22.347 26.7984 22.2713C25.7825 22.1205 24.761 22.0013 23.7506 21.8205C21.105 21.3471 18.5096 21.4527 15.9989 22.4629C13.9621 23.2824 11.9446 24.1488 9.91437 24.9844C9.69102 25.0763 9.67401 25.2209 9.67437 25.418C9.67806 27.3961 9.67867 29.3743 9.67619 31.3524C9.67622 31.4546 9.68898 31.5569 9.69702 31.6774ZM2.49562 33.4988H7.15627V21.5669H2.49562V33.4988ZM23.2119 2.48899H20.9789V5.71919H23.2119V2.48899Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="how_work_item-title">Выбор и оплата</div>
+                <div class="how_work_item-text">Выбрать и оплатить товар можно прямо на сайте. Безопасно, быстро, просто.</div>
+            </div>
+            <div class="how_work_item">
+                <div class="how_work_item-image">
+                    <svg width="41" height="36" viewBox="0 0 41 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M41 30.4994V31.2906C40.7853 31.8078 40.6489 32.3768 40.3399 32.8315C39.6414 33.8596 38.5735 34.1985 37.3545 34.1977C28.3262 34.1924 19.2979 34.1915 10.2696 34.1949H9.66687V36H0V19.0437H7.19794V0H37.7139V27.6387C37.8574 27.6662 37.9725 27.698 38.0896 27.7091C38.7302 27.7764 39.3351 28.0341 39.8243 28.448C40.4888 28.9823 40.7952 29.7111 41 30.4994ZM35.1873 27.6597V2.50049H25.742V8.19062H18.3992V2.48686H9.71372V22.3738C9.92265 22.2875 10.0919 22.2167 10.2619 22.1476C12.0735 21.4111 13.8694 20.6337 15.7011 19.9496C17.7836 19.1709 20.0247 18.8962 22.2368 19.1485C23.8803 19.3288 25.5146 19.5916 27.1529 19.8182C29.4212 20.132 30.7397 22.2172 30.0277 24.3643C29.5846 25.7005 28.2542 26.6075 26.6888 26.6198C25.3267 26.6305 23.9644 26.6218 22.6021 26.6223C22.0513 26.6225 21.7727 26.8022 21.7788 27.1511C21.7848 27.4991 22.0483 27.6595 22.6183 27.6596C26.665 27.6598 30.7117 27.6599 34.7584 27.6597H35.1873ZM9.69702 31.6774C9.82019 31.6873 9.92342 31.7029 10.0267 31.7029C19.1889 31.704 28.3511 31.7039 37.5133 31.7026C38.1162 31.7025 38.478 31.4087 38.4847 30.9371C38.4914 30.4652 38.1307 30.1638 37.5345 30.1448C37.4277 30.1414 37.3208 30.1438 37.2139 30.1438C34.8633 30.1438 32.5126 30.1438 30.162 30.1438C27.6244 30.1438 25.0866 30.1272 22.5491 30.149C20.5809 30.1659 19.4512 28.8411 19.2987 27.4976C19.09 25.6596 20.4533 24.1828 22.3899 24.1554C23.7653 24.1358 25.1412 24.1569 26.5168 24.1456C26.7555 24.1485 26.9926 24.1061 27.215 24.0205C27.6003 23.8584 27.7734 23.4594 27.7014 23.0339C27.6321 22.6246 27.3085 22.347 26.7984 22.2713C25.7825 22.1205 24.761 22.0013 23.7506 21.8205C21.105 21.3471 18.5096 21.4527 15.9989 22.4629C13.9621 23.2824 11.9446 24.1488 9.91437 24.9844C9.69102 25.0763 9.67401 25.2209 9.67437 25.418C9.67806 27.3961 9.67867 29.3743 9.67619 31.3524C9.67622 31.4546 9.68898 31.5569 9.69702 31.6774ZM2.49562 33.4988H7.15627V21.5669H2.49562V33.4988ZM23.2119 2.48899H20.9789V5.71919H23.2119V2.48899Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="how_work_item-title">Новая и почти новая одежда</div>
+                <div class="how_work_item-text">Магазины продают на RAINBOW новую одежду со скидками до 85%! Частные продавцы размещают новую одежду с бирками или почти новую одежду в отличном состоянии.</div>
+            </div>
+            <div class="how_work_item">
+                <div class="how_work_item-image">
+                    <svg width="41" height="36" viewBox="0 0 41 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M41 30.4994V31.2906C40.7853 31.8078 40.6489 32.3768 40.3399 32.8315C39.6414 33.8596 38.5735 34.1985 37.3545 34.1977C28.3262 34.1924 19.2979 34.1915 10.2696 34.1949H9.66687V36H0V19.0437H7.19794V0H37.7139V27.6387C37.8574 27.6662 37.9725 27.698 38.0896 27.7091C38.7302 27.7764 39.3351 28.0341 39.8243 28.448C40.4888 28.9823 40.7952 29.7111 41 30.4994ZM35.1873 27.6597V2.50049H25.742V8.19062H18.3992V2.48686H9.71372V22.3738C9.92265 22.2875 10.0919 22.2167 10.2619 22.1476C12.0735 21.4111 13.8694 20.6337 15.7011 19.9496C17.7836 19.1709 20.0247 18.8962 22.2368 19.1485C23.8803 19.3288 25.5146 19.5916 27.1529 19.8182C29.4212 20.132 30.7397 22.2172 30.0277 24.3643C29.5846 25.7005 28.2542 26.6075 26.6888 26.6198C25.3267 26.6305 23.9644 26.6218 22.6021 26.6223C22.0513 26.6225 21.7727 26.8022 21.7788 27.1511C21.7848 27.4991 22.0483 27.6595 22.6183 27.6596C26.665 27.6598 30.7117 27.6599 34.7584 27.6597H35.1873ZM9.69702 31.6774C9.82019 31.6873 9.92342 31.7029 10.0267 31.7029C19.1889 31.704 28.3511 31.7039 37.5133 31.7026C38.1162 31.7025 38.478 31.4087 38.4847 30.9371C38.4914 30.4652 38.1307 30.1638 37.5345 30.1448C37.4277 30.1414 37.3208 30.1438 37.2139 30.1438C34.8633 30.1438 32.5126 30.1438 30.162 30.1438C27.6244 30.1438 25.0866 30.1272 22.5491 30.149C20.5809 30.1659 19.4512 28.8411 19.2987 27.4976C19.09 25.6596 20.4533 24.1828 22.3899 24.1554C23.7653 24.1358 25.1412 24.1569 26.5168 24.1456C26.7555 24.1485 26.9926 24.1061 27.215 24.0205C27.6003 23.8584 27.7734 23.4594 27.7014 23.0339C27.6321 22.6246 27.3085 22.347 26.7984 22.2713C25.7825 22.1205 24.761 22.0013 23.7506 21.8205C21.105 21.3471 18.5096 21.4527 15.9989 22.4629C13.9621 23.2824 11.9446 24.1488 9.91437 24.9844C9.69102 25.0763 9.67401 25.2209 9.67437 25.418C9.67806 27.3961 9.67867 29.3743 9.67619 31.3524C9.67622 31.4546 9.68898 31.5569 9.69702 31.6774ZM2.49562 33.4988H7.15627V21.5669H2.49562V33.4988ZM23.2119 2.48899H20.9789V5.71919H23.2119V2.48899Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="how_work_item-title">Гарантия подлинности</div>
+                <div class="how_work_item-text">Модераторы и эксперты RAINBOWи проверяют состояние и подлинность товара перед отправкой. После проверки мы выдаем сертификат подлинности и качества к каждому товару.</div>
+            </div>
+        </div>
+    </div>
 </main>
-
+<footer>
+    <div class="footer">
+        <div class="container">
+          <div class="row">
+              <div class="col-6 col-md-2 before-line">
+                  <div class="footer-title">Rainbow</div>
+                  <a href="#">О проекте</a>
+                  <a href="#">Гарантия от Rainbow</a>
+                  <a href="#">Как работает сервис</a>
+              </div>
+              <div class="col-6 col-md-2 before-line">
+                  <div class="footer-title">ПОКУПАТЕЛЯМ</div>
+                  <a href="#">Как покупать</a>
+                  <a href="#">Безопасная сделка</a>
+                  <a href="#">Доставка</a>
+              </div>
+              <div class="col-6 col-md-2 before-line">
+                  <div class="footer-title">ПРОДАВЦАМ</div>
+                  <a href="#">Как продавать</a>
+                  <a href="#">Безопасная сделка</a>
+                  <a href="#">Коммиссия</a>
+              </div>
+              <div class="col-6 col-md-3 before-line">
+                  <div class="footer-title">ПОМОЩЬ И ПОДДЕРЖКА</div>
+                  <a href="#">Контакты</a>
+                  <a href="#">Онлайн поддержка</a>
+              </div>
+              <div class="col-12 col-md-3">
+                  <div class="footer-title">ПОДПИСКА</div>
+                  <div class="form-group">
+                      <label class="sr-only" for="subscribe">E-mail</label>
+                      <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                              <div class="input-group-text">
+                                  <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M14 2.92453V9.075C14 10.1383 13.1342 11 12.0658 11H1.93421C1.42123 11 0.929252 10.7972 0.566517 10.4362C0.203782 10.0752 0 9.58554 0 9.075V2.92453L6.77821 6.6352C6.91637 6.71073 7.084 6.71073 7.22179 6.6352L14 2.92417V2.92453ZM12.0658 8.2787e-09C12.5707 4.6697e-05 13.0556 0.196589 13.4169 0.547645C13.7781 0.8987 13.9871 1.37643 13.9993 1.8788L7 5.71047L0.000736789 1.87843L0.00147375 1.84543C0.0221063 1.34906 0.23476 0.879847 0.594967 0.535911C0.955173 0.191976 1.43504 -4.60361e-05 1.93421 8.2787e-09H12.0658Z" fill="#DCDCDC"/>
+                                  </svg>
+                              </div>
+                          </div>
+                          <input type="email" class="form-control" id="subscribe" placeholder="E-mail">
+                      </div>
+                  </div>
+                  <div class="form-group d-flex mb-0">
+                      <label class="custom-radio">
+                          <input type="radio" name="sex" value="0"/>
+                          <span>Женщинам</span>
+                      </label>
+                      <label class="custom-radio">
+                          <input type="radio" name="sex" value="1"/>
+                          <span>Мужчинам</span>
+                      </label>
+                  </div>
+                  <p class="subscribe">Получайте уведомления о новых <br> товарах и скидках. Только нужное, мы говорим нет спаму!</p>
+              </div>
+          </div>
+        </div>
+    </div>
+    <div class="footer-two">
+        <div class="container">
+            <div class="footer-two-container">
+                <a href="#">Правила продаж</a>
+                <a href="#">Офера</a>
+                <a href="#">Политика конфиденциальности </a>
+                <a href="#">Создание сайта:
+                    <svg width="25" height="32" viewBox="0 0 25 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.613 11.5911C16.6126 11.277 16.5987 10.962 16.5718 10.649C16.4262 8.9547 15.3734 7.86301 13.6318 7.69544C11.9265 7.53135 10.2132 7.58573 8.50288 7.66355C8.47219 7.66494 8.44252 7.68791 8.34047 7.73157V20.063C7.8684 20.1869 0.575538 20.2022 0.0105218 20.0881V0.0666644C0.209395 0.0442775 0.389138 0.0064269 0.568885 0.00641503C4.6872 0.00613593 8.80575 -0.0155109 12.9237 0.0223263C15.5265 0.0462412 17.9918 0.643631 20.2266 2.00093C23.2371 3.82925 24.8272 6.49775 24.9271 9.93831C25.0232 13.2467 24.9995 16.559 24.9916 19.8694C24.989 20.9756 24.9522 22.0924 24.7945 23.1855C24.2555 26.9242 22.1029 29.4571 18.5583 30.8845C17.0726 31.4828 15.5037 31.7676 13.9096 31.8702C12.593 31.9548 11.2704 31.9703 9.95021 31.9786C6.88273 31.9978 3.8151 31.9942 0.747525 31.9998C0.531512 32.0002 0.315499 31.9999 0.118399 31.9999C-0.00701769 31.5689 -0.0457917 25.1273 0.065925 24.4533C0.277033 24.4376 0.505177 24.4054 0.733261 24.4058C2.98733 24.4099 5.24139 24.4258 7.49545 24.425C9.22358 24.4244 10.9517 24.4128 12.6798 24.3901C13.462 24.3772 14.2338 24.2129 14.9504 23.9068C16.0568 23.4416 16.5073 22.5222 16.6038 21.4204" fill="#8E8E8E"/>
+                </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/jquery.sticky.js"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/main.js?v=123-0"></script>
 </body>
 </html>

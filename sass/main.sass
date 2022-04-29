@@ -367,12 +367,61 @@ video
 .how_work
   background: #F8F8F8
   margin-top: 100px
+  &-padding
+    padding: 100px 0
   &_wrapper
     display: flex
     flex-direction: column
     align-items: center
+    padding: 75px 0
+  &_content
+    display: flex
+    justify-content: space-around
+  &_item
+    max-width: 255px
+    text-align: center
+    position: relative
+    &:after
+      content: ''
+      width: 1px
+      background: #EFEFEF
+      height: 146px
+      position: absolute
+      right: -65px
+      top: 22%
+    &:last-child
+      &:after
+        content: unset
+
+    &-image
+      margin: 0 auto
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 82px
+      height: 82px
+      background: $dark
+      border-radius: 50px
+    &-title
+      margin-top: 15px
+      font-family: $palatino
+      font-style: normal
+      font-weight: 400
+      font-size: 20px
+      line-height: 27px
+      color: $dark
+    &-text
+      margin-top: 10px
+      font-family: $nunito
+      font-style: normal
+      font-weight: 400
+      font-size: 16px
+      line-height: 22px
+      text-align: center
+      color: $dark
+
+
   &_title
-    margin-top: 75px
     font-family: $palatino
     font-style: normal
     font-weight: 400
@@ -389,8 +438,160 @@ video
     text-align: center
     color: $dark
     max-width: 814px
+  &_buttons
+    display: flex
+    margin-top: 20px
+    a
+      margin-top: 0
+      min-width: 298px
+      background: transparent
+      color: $dark
+      border: 1px solid $dark
+      &.active
+        background: $dark
+        color: #FFFFFF
 
 
 #sticker
   background-color: #F8F8F8
   padding: 50px 0
+
+.footer
+  background-color: $dark
+  padding: 96px 0
+  .before-line
+    position: relative
+    &:after
+      content: ""
+      width: 1px
+      height: 247px
+      display: block
+      position: absolute
+      right: 30px
+      top: -45px
+      background: rgba(48, 48, 48, 1)
+
+  .row
+    height: 155px
+  &-two
+    background-color: #1E1E1E
+    padding: 22px 0
+    &-container
+      display: flex
+      justify-content: center
+    a
+      display: flex
+      align-items: center
+      margin-left: 10px
+      font-family: $nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 14px
+      line-height: 19px
+      padding: 0 75px
+      color: #8E8E8E
+      border-right: 1px solid #303030
+      svg
+        margin-left: 15px
+      &:last-child
+        border-right: 0
+      &:hover
+        color: #FFFFFF
+        text-decoration: underline !important
+    .row
+      justify-content: center
+      align-items: center
+  &-title
+    font-family: $palatino
+    font-style: normal
+    font-weight: 400
+    font-size: 20px
+    line-height: 27px
+    color: #FFFFFF
+    text-transform: uppercase
+    margin-left: 10px
+    margin-bottom: 10px
+  a
+    display: block
+    margin-left: 10px
+    font-family: $nunito
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 22px
+    color: #8E8E8E
+    max-width: max-content
+    &:hover
+      color: #FFFFFF
+      text-decoration: underline !important
+  .input-group-text, input[type="email"]
+    background-color: #FFFFFF
+    border-radius: 0
+    border: 0
+    max-width: 227px
+  .input-group
+    margin-left: 10px
+
+
+label.custom-radio
+  margin-bottom: 10px
+  display: flex
+  cursor: pointer
+  position: relative
+  overflow: hidden
+  font-family: $nunito
+  font-style: normal
+  font-weight: 300
+  font-size: 16px
+  line-height: 22px
+  color: #8E8E8E
+  input
+    position: absolute
+    left: -9999px
+    &:checked + span
+      &:before
+        box-shadow: inset 0 0 0 3px #242424
+        background: white
+        border: 1px solid white
+
+  span
+    display: flex
+    align-items: center
+    padding: 0 10px
+    border-radius: 99em
+    transition: 0.25s ease
+
+    &:before
+      display: flex
+      flex-shrink: 0
+      content: ""
+      width: 17px
+      height: 17px
+      border-radius: 50%
+      margin-right: 10px
+      transition: 0.25s ease
+      box-shadow: inset 0 0 0 0.125em #8E8E8E
+
+.subscribe
+  margin-left: 10px
+  font-family: $nunito
+  font-style: normal
+  font-weight: 300
+  font-size: 12px
+  line-height: 19px
+  color: #FFFFFF
+  margin-bottom: 0
+
+.categ-blocks
+  display: flex
+  flex-wrap: wrap
+  .categories_item
+    width: 50%
+
+.swiper-pagination-bullet
+  background: #BFBFBF
+.swiper-pagination-bullet-active
+  background: #323232
+
+//Адаптив
+@import "media"
