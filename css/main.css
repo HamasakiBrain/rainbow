@@ -692,9 +692,16 @@ label.custom-radio span:before {
   background: #323232;
 }
 
+.mobile {
+  display: none;
+}
+
 @media screen and (max-width: 926px) {
   header {
     display: none;
+  }
+  header.mobile {
+    display: flex;
   }
 
   .slides {
