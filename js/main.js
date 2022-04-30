@@ -53,7 +53,16 @@ $(document).ready(function () {
         }
     })
     if (width < 990) {
-        $(".swiper-pagination").removeClass('d-none')
+        document.addEventListener('scroll', function(){
+            if (window.scrollY < 100){
+                document.getElementsByClassName('mobile')[0].classList.remove('background')
+
+            } else {
+                document.getElementsByClassName('mobile')[0].classList.add('background')
+            }
+        })
+        document.getElementsByClassName('swiper-pagination')[0].classList.remove('d-none')
+        // $(".swiper-pagination").removeClass('d-none')
         $(".actual .item_img").each(function (index, e){
             let img = $(e).find('img')
             $(e).css('background-image', "url("+img.attr('src')+")")
@@ -70,7 +79,16 @@ $(document).ready(function () {
         $(".swiper-scrollbar").removeClass('d-none')
     }
 
-
+    let filter_brands = new Swiper('.filters_brands', {
+        freeMode: true,
+        slidesPerView: "auto",
+        direction: "vertical",
+        scrollbar: {
+            el: '.filters_scrollbar',
+            dragSize: 96,
+            draggable: true,
+        },
+    })
     const trends = new Swiper('.trends', {
         freeMode: true,
         slidesPerView: 5,
@@ -95,5 +113,51 @@ $(document).ready(function () {
             }
         }
     });
+
+    let menu = document.getElementsByClassName('menu')[0]
+    let menuShow = document.getElementsByClassName('header-wrapper')[0]
+    let bg = false
+    menu.addEventListener('click', function (){
+        if (bg){
+            document.getElementsByClassName('mobile')[0].style.backgroundColor = ""
+        } else {
+            document.getElementsByClassName('mobile')[0].style.backgroundColor = "transparent"
+        }
+        menuShow.classList.toggle('active')
+        bg = !bg
+    })
+
+    /*Страница каталога с фильтром*/
+    let ranger = $(".js-range-slider").ionRangeSlider({
+        postfix: "₽",
+        hide_from_to: true,
+        onStart: function (data) {
+            // fired then range slider is ready
+            document.getElementsByClassName('irs-min')[0].textContent = data.from_pretty + "₽"
+            document.getElementsByClassName('irs-max')[0].textContent = data.to_pretty + "₽"
+        },
+        onChange: function (data) {
+            console.log(data)
+            document.getElementsByClassName('irs-min')[0].textContent = data.from_pretty + "₽"
+            document.getElementsByClassName('irs-max')[0].textContent = data.to_pretty + "₽"
+        },
+        onFinish: function (data) {
+            document.getElementsByClassName('irs-min')[0].textContent = data.from_pretty + "₽"
+            document.getElementsByClassName('irs-max')[0].textContent = data.to_pretty + "₽"
+        },
+        onUpdate: function (data) {
+            document.getElementsByClassName('irs-min')[0].textContent = data.from_pretty + "₽"
+            document.getElementsByClassName('irs-max')[0].textContent = data.to_pretty + "₽"
+        }
+    });
+
+    let a = document.getElementsByClassName('filters_title');
+    for(let i = 0; i < a.length; i++){
+        a[i].addEventListener("click", function(){
+            let id = this.getAttribute("data-drop");
+            this.classList.toggle('active')
+            document.getElementById(id).classList.toggle('active')
+        });
+    }
 
 })
