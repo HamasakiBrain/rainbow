@@ -1,19 +1,24 @@
 $(document).ready(function () {
-    let width = $("body").width();
-    let height = $("body").height();
+    let width = window.screen.width ;
+    let height = window.screen.height ;
     if (width > 990) {
-        $("#sticker").sticky({
-            topSpacing: 0,
-            center: true,
-            zIndex: 990,
-            getWidthFrom: "body"
-        });
-        $('#sticker').on('sticky-start', function () {
-            $(this).css('padding', '30px 0')
-        });
-        $('#sticker').on('sticky-end', function () {
-            $(this).css('padding', '50px 0')
-        });
+        if (typeof document.getElementById("sticker").sticky === "undefined"){
+
+        } else {
+            document.getElementById("sticker").sticky({
+                topSpacing: 0,
+                center: true,
+                zIndex: 990,
+                getWidthFrom: "body"
+            });
+            document.getElementById("sticker").on('sticky-start', function () {
+                this.style.padding = "30px 0"
+            });
+            document.getElementById("sticker").on('sticky-end', function () {
+                this.style.padding = '50px 0'
+            });
+        }
+
 
         const catalog = new Swiper('.catalog-slides', {
             freeMode: true,
@@ -56,27 +61,40 @@ $(document).ready(function () {
         document.addEventListener('scroll', function(){
             if (window.scrollY < 100){
                 document.getElementsByClassName('mobile')[0].classList.remove('background')
-
             } else {
                 document.getElementsByClassName('mobile')[0].classList.add('background')
             }
         })
-        document.getElementsByClassName('swiper-pagination')[0].classList.remove('d-none')
+        // $('.swiper-wrapper').addClass( "disabled" );
+        // $('.swiper-pagination').removeClass( "disabled" );
+        // document.getElementsByClassName('swiper-pagination')[0].classList.remove('d-none')
         // $(".swiper-pagination").removeClass('d-none')
-        $(".actual .item_img").each(function (index, e){
-            let img = $(e).find('img')
-            $(e).css('background-image', "url("+img.attr('src')+")")
+        let images = document.querySelectorAll('.actual .item_img');
+        images.forEach(function (item){
+            let img = item.querySelector('img');
+            item.style.backgroundImage = "url("+img.getAttribute('src')+")"
             img.remove()
         })
+        // $(".actual .item_img").each(function (index, e){
+        //     let img = $(e).find('img')
+        //     $(e).css('background-image', "url("+img.attr('src')+")")
+        //     img.remove()
+        // })
         // $(".footer-two-container a.wrap").contents().unwrap().wrap('<div class="chlen">')
-        $(".footer-two-container").prepend(`<div class="d w-50"></div>`)
-        $(".footer-two-container .d").append($("a.wrap"))
+
+        let s = document.createElement("div");
+        s.classList.add('w-50', "d")
+        document.querySelector(".footer-two-container").prepend(s)
+        let links = document.querySelectorAll('a.wrap');
+        links.forEach(function(item) {
+            document.querySelector(".footer-two-container .d").append(item)
+        })
         const howWork = new Swiper('.how_work-padding', {
             autoplay: true,
-            // freeMode: true,
         });
     } else {
-        $(".swiper-scrollbar").removeClass('d-none')
+        document.getElementsByClassName('swiper-scrollbar')[0].classList.remove('d-none')
+        typeof document.getElementsByClassName('swiper-pagination')[0] !== "undefined" ? document.getElementsByClassName('swiper-pagination')[0].classList.add('disabled') : ""
     }
 
     let filter_brands = new Swiper('.filters_brands', {
@@ -137,7 +155,6 @@ $(document).ready(function () {
             document.getElementsByClassName('irs-max')[0].textContent = data.to_pretty + "₽"
         },
         onChange: function (data) {
-            console.log(data)
             document.getElementsByClassName('irs-min')[0].textContent = data.from_pretty + "₽"
             document.getElementsByClassName('irs-max')[0].textContent = data.to_pretty + "₽"
         },
@@ -159,5 +176,8 @@ $(document).ready(function () {
             document.getElementById(id).classList.toggle('active')
         });
     }
+
+
+
 
 })

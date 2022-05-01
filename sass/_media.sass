@@ -5,11 +5,12 @@
     display: none
     &.mobile
       display: flex
-      padding: 10px 15px
+      padding: 10px
       justify-content: space-between
       width: 100% !important
       align-items: center
       transition: .3s all
+      top: 0
       &.background
         background-color: rgba(0,0,0,.69)
         transition: .3s all
@@ -328,7 +329,40 @@
         color: #FFFFFF
 
   .padding-14
-    padding: 0 14px
+    padding: 0 15px
+  .breadcrumb-wrapper
+    display: none
+
+  // Стили для страница каталог
+
+  body.catalog
+    padding-top: 68px
+  .filter
+    .item
+      max-width: 50% !important
+  .filters
+    display: none
+    &_brands
+      height: 100vw
+  .display-mobile
+    display: block
+
+  .page
+    &-title
+      font-family: $palatino
+      font-style: normal
+      font-weight: 400
+      font-size: 32px
+      line-height: 43px
+      color: $dark
+      margin-bottom: 11px
+    &_name
+
+  .pagination
+    margin-top: 20px
+    padding-bottom: 50px
+  .catalog.items .item:nth-child(n+5)
+    display: block
 @media screen and (max-width: 370px)
   .footer a
     font-size: 15px

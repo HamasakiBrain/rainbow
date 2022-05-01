@@ -834,8 +834,9 @@ label.custom-radio span:before {
   padding: 0 5px !important;
 }
 
-.filters {
+.filters_block {
   border: 1px solid #EFEFEF;
+  margin-bottom: 40px;
 }
 .filters_brands {
   max-height: 400px;
@@ -907,6 +908,48 @@ label.custom-radio span:before {
 }
 
 /* Active */
+.swiper-wrapper.disabled {
+  transform: translate3d(0px, 0, 0) !important;
+}
+
+.swiper-pagination.disabled {
+  display: none;
+}
+
+.display-mobile {
+  display: none;
+}
+
+.pagination {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}
+.pagination a {
+  display: block;
+  padding: 4px 10px;
+  margin-right: 25px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #222222;
+  border: 1px solid #242424;
+  transition: 0.2s all;
+}
+.pagination a.active, .pagination a:hover {
+  background-color: #242424;
+  color: #FFFFFF;
+}
+.pagination a:last-child {
+  margin-right: 0;
+}
+
+.filter-padding {
+  padding-bottom: 100px;
+}
+
 @media screen and (max-width: 926px) {
   body {
     padding-bottom: 60px;
@@ -917,11 +960,12 @@ label.custom-radio span:before {
   }
   header.mobile {
     display: flex;
-    padding: 10px 15px;
+    padding: 10px;
     justify-content: space-between;
     width: 100% !important;
     align-items: center;
     transition: 0.3s all;
+    top: 0;
   }
   header.mobile.background {
     background-color: rgba(0, 0, 0, 0.69);
@@ -1318,7 +1362,48 @@ label.custom-radio span:before {
   }
 
   .padding-14 {
-    padding: 0 14px;
+    padding: 0 15px;
+  }
+
+  .breadcrumb-wrapper {
+    display: none;
+  }
+
+  body.catalog {
+    padding-top: 68px;
+  }
+
+  .filter .item {
+    max-width: 50% !important;
+  }
+
+  .filters {
+    display: none;
+  }
+  .filters_brands {
+    height: 100vw;
+  }
+
+  .display-mobile {
+    display: block;
+  }
+
+  .page-title {
+    font-family: "Palatino";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    color: #242424;
+    margin-bottom: 11px;
+  }
+  .pagination {
+    margin-top: 20px;
+    padding-bottom: 50px;
+  }
+
+  .catalog.items .item:nth-child(n+5) {
+    display: block;
   }
 }
 @media screen and (max-width: 370px) {

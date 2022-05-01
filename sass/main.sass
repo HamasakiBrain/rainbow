@@ -712,7 +712,9 @@ label.custom-radio
   padding: 0 5px !important
 
 .filters
-  border:  1px solid #EFEFEF
+  &_block
+    border:  1px solid #EFEFEF
+    margin-bottom: 40px
   &_brands
     max-height: 400px
     .swiper-slide
@@ -775,5 +777,40 @@ label.custom-radio
     opacity: .8
 
 /* Active
+.swiper-wrapper.disabled
+  transform: translate3d(0px, 0, 0) !important
+
+.swiper-pagination.disabled
+  display: none
+
+.display-mobile
+  display: none
+
+.pagination
+  display: flex
+  margin-top: 30px
+  justify-content: center
+  a
+    display: block
+    padding: 4px 10px
+    margin-right: 25px
+    font-family: $nunito
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 22px
+    color: #222222
+    border: 1px solid $dark
+    transition: .2s all
+    &.active, &:hover
+      background-color: $dark
+      color: #FFFFFF
+
+    &:last-child
+      margin-right: 0
+
+.filter
+  &-padding
+    padding-bottom: 100px
 //Адаптив
 @import "media"
