@@ -1,7 +1,7 @@
 $(document).ready(function () {
     let width = window.screen.width ;
     let height = window.screen.height ;
-    if (width > 990) {
+    if (width > 1024) {
         if (typeof document.getElementById("sticker").sticky === "undefined"){
 
         } else {
@@ -57,7 +57,7 @@ $(document).ready(function () {
             }
         }
     })
-    if (width < 990) {
+    if (width < 1024) {
         document.addEventListener('scroll', function(){
             if (window.scrollY < 100){
                 document.getElementsByClassName('mobile')[0].classList.remove('background')
@@ -93,7 +93,7 @@ $(document).ready(function () {
             autoplay: true,
         });
     } else {
-        document.getElementsByClassName('swiper-scrollbar')[0].classList.remove('d-none')
+        typeof document.getElementsByClassName('swiper-scrollbar')[0] !== "undefined" ? document.getElementsByClassName('swiper-scrollbar')[0].classList.remove('d-none') : ""
         typeof document.getElementsByClassName('swiper-pagination')[0] !== "undefined" ? document.getElementsByClassName('swiper-pagination')[0].classList.add('disabled') : ""
     }
 
