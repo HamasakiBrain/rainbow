@@ -92,18 +92,7 @@ $(document).ready(function () {
         document.querySelectorAll('.dotts').forEach((e) => {
             e.textContent = "_____________"
         })
-        let productImgs = document.querySelector(".product_images")
-        let productImgsChilds = productImgs.childNodes
-        productImgsChilds.forEach((e, i) => {
-            if ( e.nodeType === Node.ELEMENT_NODE) {
-                e.classList.add('swiper-slide')
-                let cloneNode = e.cloneNode(true)
-                let cloneTwo = cloneNode.cloneNode(true)
-                document.querySelector('#product_images > .swiper-wrapper').append(cloneNode)
-                document.querySelector(' #product_images-nav > .swiper-wrapper').append(cloneTwo)
-                e.remove()
-            }
-        })
+
         document.querySelector(".filters") !== null ? document.querySelector(".mobile_filter-wrapper").append(document.querySelector(".filters")) : ""
 
 
@@ -141,6 +130,21 @@ $(document).ready(function () {
         const howWork = new Swiper('.how_work-padding', {
             autoplay: true,
         });
+
+        let productImgs = document.querySelector(".product_images")
+        let productImgsChilds = productImgs !== null ? productImgs.childNodes : null
+        if (productImgsChilds !== null){
+            productImgsChilds.forEach((e, i) => {
+                if ( e.nodeType === Node.ELEMENT_NODE) {
+                    e.classList.add('swiper-slide')
+                    let cloneNode = e.cloneNode(true)
+                    let cloneTwo = cloneNode.cloneNode(true)
+                    document.querySelector('#product_images > .swiper-wrapper').append(cloneNode)
+                    document.querySelector(' #product_images-nav > .swiper-wrapper').append(cloneTwo)
+                    e.remove()
+                }
+            })
+        }
     } else {
         typeof document.getElementsByClassName('swiper-scrollbar')[0] !== "undefined" ? document.getElementsByClassName('swiper-scrollbar')[0].classList.remove('d-none') : ""
         typeof document.getElementsByClassName('swiper-pagination')[0] !== "undefined" ? document.getElementsByClassName('swiper-pagination')[0].classList.add('disabled') : ""
@@ -199,6 +203,19 @@ $(document).ready(function () {
         bg = !bg
     })
 
+    function initDropdowns(el){
+        let a = document.getElementsByClassName(el);
+        for(let i = 0; i < a.length; i++){
+            a[i].addEventListener("click", function(){
+                let id = this.getAttribute("data-drop");
+                this.classList.toggle('active')
+                document.getElementById(id).classList.toggle('active')
+            });
+        }
+    }
+    initDropdowns("filters_title")
+    initDropdowns("collapse-header")
+
     /*Страница каталога с фильтром*/
     let ranger = $(".js-range-slider").ionRangeSlider({
         postfix: "₽",
@@ -221,17 +238,4 @@ $(document).ready(function () {
             document.getElementsByClassName('irs-max')[0].textContent = data.to_pretty + "₽"
         }
     });
-
-    let a = document.getElementsByClassName('filters_title');
-    for(let i = 0; i < a.length; i++){
-        a[i].addEventListener("click", function(){
-            let id = this.getAttribute("data-drop");
-            this.classList.toggle('active')
-            document.getElementById(id).classList.toggle('active')
-        });
-    }
-
-
-
-
 })

@@ -1065,7 +1065,150 @@ label.custom-radio
       top: calc(50% - 205px)
 
 
+
+.bg_for_users
+  background-image: url("../img/for_users.png")
+  background-size: 100%
+  padding: 142px 0
+.for_users
+  &-wrapper
+    max-width: 873px
+    margin: 0 auto
+  &-title
+    font-family: $palatino
+    font-style: normal
+    font-weight: 400
+    font-size: 36px
+    line-height: 49px
+    color: #FFFFFF
+    margin-bottom: 30px
+    text-align: center
+
+  &-desc
+    p
+      margin-bottom: 15px
+      font-family: $nunito
+      font-style: normal
+      font-weight: 400
+      font-size: 18px
+      line-height: 25px
+      text-align: center
+      color: #FFFFFF
+
+.section
+  &-why-buy
+    padding: 65px 0 0 0
+
+    .section-title
+      color: #252525
+
+    .col-10
+      padding: 19px 0
+      position: relative
+      &:after, &.br-top:before
+        width: 1014px
+        content: ""
+        height: 1px
+        background-color: #EFEFEF
+        position: absolute
+        left: -315px
+        bottom: 0
+      .section
+        &-title, &-sub
+          font-size: 18px
+          line-height: 25px
+    .br-top
+      &:before
+        top: 0
+        width: 1098px !important
+.section-who-partner
+  margin: 75px auto
+  &_title
+    text-align: center
+    font-family: $palatino
+    font-style: normal
+    font-weight: 400
+    font-size: 36px
+    line-height: 49px
+    color: #252525
+  &_desc
+    margin-top: 30px
+    font-family: $nunito
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 25px
+    text-align: center
+    color: #252525
+    max-width: 980px
+    p
+      margin-bottom: 15px
+.care_block
+  background-color: #F8F8F8
+  padding: 30px 0
+  .section-who-partner
+    &_title, &_desc
+      text-align: left
+.for_sales
+  &:before, &:after
+    background-color: #999999
+
 .display-lg
   display: block
+.section-why-buy
+  .col-2
+    font-family: $palatino
+    font-style: normal
+    font-weight: 400
+    font-size: 48px
+    line-height: 65px
+    color: #000000
+.faq
+  padding: 90px 0 0 0
+  .section_title.bordered
+    &:before, &:after
+      width: calc(1550px - 100% + 585px)
+.collapse
+  &-block
+    background-color: #F8F8F8
+    padding: 50px 0 100px 0
+    .border-1
+      position: relative
+      padding: 20px 0
+      &:before, &:after
+        content: ""
+        width: calc(100% + 201px)
+        left: -201px
+        height: 1px
+        position: absolute
+        background-color: #EFEFEF
+      &:before
+        top: 0
+      &:after
+        bottom: 0
+
+  &-header
+    cursor: pointer
+    font-family: $palatino
+    font-style: normal
+    font-weight: 400
+    font-size: 32px
+    line-height: 43px
+    color: #242424
+    &.active
+      svg
+        rect:nth-child(2)
+          transform: translateX(-100%)
+  &-content
+    opacity: 0
+    height: 0
+    transition: .3s all
+    &.active
+      padding-top: 30px
+      transition: .3s all
+      opacity: 1
+      height: 100%
+
+
 //Адаптив
 @import "media"
