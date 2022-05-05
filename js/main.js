@@ -36,7 +36,6 @@ $(document).ready(function () {
     }
 
     let swiper = new Swiper('.slides', {
-
         loop: false,
         speed: 1200,
         parallax: true,
@@ -57,6 +56,7 @@ $(document).ready(function () {
             }
         }
     })
+
     if (width < 1024) {
         document.addEventListener('scroll', function(){
             if (window.scrollY < 100){
@@ -65,16 +65,65 @@ $(document).ready(function () {
                 document.getElementsByClassName('mobile')[0].classList.add('background')
             }
         })
-        // $('.swiper-wrapper').addClass( "disabled" );
-        // $('.swiper-pagination').removeClass( "disabled" );
-        // document.getElementsByClassName('swiper-pagination')[0].classList.remove('d-none')
-        // $(".swiper-pagination").removeClass('d-none')
+
+        /*Слайдер для страницы продукта*/
+
+
+        let product_nav = new Swiper('#product_images-nav', {
+            spaceBetween: 7,
+            slidesPerView: "auto",
+            freeMode: true,
+            watchSlidesProgress: true,
+
+        })
+        let product = new Swiper('#product_images', {
+            slidesPerView: 1,
+            pagination: {
+                el: ".product_image-pagination",
+                clickable: true,
+            },
+            thumbs: {
+                swiper: product_nav,
+            },
+        })
+        console.log(product_nav.controller.control = product_nav)
+        // product.controller.control = product_nav
+
+        document.querySelectorAll('.dotts').forEach((e) => {
+            e.textContent = "_____________"
+        })
+        let productImgs = document.querySelector(".product_images")
+        let productImgsChilds = productImgs.childNodes
+        productImgsChilds.forEach((e, i) => {
+            if ( e.nodeType === Node.ELEMENT_NODE) {
+                e.classList.add('swiper-slide')
+                let cloneNode = e.cloneNode(true)
+                let cloneTwo = cloneNode.cloneNode(true)
+                document.querySelector('#product_images > .swiper-wrapper').append(cloneNode)
+                document.querySelector(' #product_images-nav > .swiper-wrapper').append(cloneTwo)
+                e.remove()
+            }
+        })
+        document.querySelector(".filters") !== null ? document.querySelector(".mobile_filter-wrapper").append(document.querySelector(".filters")) : ""
+
+
+        let filter_btns = document.querySelectorAll('.filter_show');
+        filter_btns.forEach((e) => {
+            e.addEventListener('click', () => {
+                document.querySelector('.mobile_filter-wrapper').classList.toggle('active')
+                document.querySelector('body').classList.toggle('no-scroll')
+            })
+        })
+
         let images = document.querySelectorAll('.actual .item_img');
         images.forEach(function (item){
             let img = item.querySelector('img');
             item.style.backgroundImage = "url("+img.getAttribute('src')+")"
             img.remove()
         })
+
+
+
         // $(".actual .item_img").each(function (index, e){
         //     let img = $(e).find('img')
         //     $(e).css('background-image', "url("+img.attr('src')+")")
@@ -96,6 +145,11 @@ $(document).ready(function () {
         typeof document.getElementsByClassName('swiper-scrollbar')[0] !== "undefined" ? document.getElementsByClassName('swiper-scrollbar')[0].classList.remove('d-none') : ""
         typeof document.getElementsByClassName('swiper-pagination')[0] !== "undefined" ? document.getElementsByClassName('swiper-pagination')[0].classList.add('disabled') : ""
     }
+    let password = document.getElementById('password')
+    document.querySelector('.eventShowPass') !== null ?  document.querySelector('.eventShowPass').addEventListener('click', function (e){
+        let type = password.getAttribute('type');
+        type === 'password' ? password.setAttribute('type', 'text') : password.setAttribute('type', 'password')
+    }) : ""
 
     let filter_brands = new Swiper('.filters_brands', {
         freeMode: true,

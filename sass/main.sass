@@ -826,5 +826,246 @@ label.custom-radio
       &_description
         max-width: 470px
         margin-bottom: 10px
+
+.filter
+  .item_img
+    img
+      width: 100%
+  &_reset
+    margin-top: 15px
+    margin-bottom: 20px
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 19px
+    text-align: center
+    text-decoration-line: underline !important
+    color: #646464
+    display: block
+
+  &_sale_btn
+    display: block
+    max-width: max-content
+    padding: 14px 45px
+    background: $dark
+    color: #FFFFFF !important
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 22px
+    margin: 0 auto
+
+
+// Modal
+
+.modal
+  &-backdrop
+    backdrop-filter: blur(6px)
+    background-color: rgba(36,36,36,.21)
+  &_footer
+    margin-top: 25px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    a
+      font-size: 16px
+      line-height: 22px
+  &-form
+    max-width: 493px
+    width: 100%
+    margin: 39px auto 0 auto
+    .form-group
+      margin-bottom: 10px
+  &-title
+    width: 100%
+    text-align: center
+    font-family: $palatino
+    font-style: normal
+    font-weight: 400
+    font-size: 36px
+    line-height: 49px
+    color: $dark
+    margin-top: 82px
+
+
+  &-header
+    border: 0
+  &-content
+    background-color: #F8F8F8
+    border: none
+    border-radius: 0
+
+  &-dialog
+    max-width: 800px
+  .close
+    opacity: 1
+    margin: unset
+    position: absolute
+    right: 26px
+    top: 26px
+    z-index: 2
+    &:hover
+      opacity: .5
+
+
+.input
+  border: 1px solid #EFEFEF
+  padding: 15px
+  font-family: $nunito
+  height: 100%
+  font-style: normal
+  background-color: transparent
+  border-radius: 0
+  font-weight: 300
+  font-size: 16px
+  line-height: 22px
+  color: #242424
+
+.label
+  margin-bottom: 5px
+  font-family: $nunito
+  font-style: normal
+  font-weight: 300
+  font-size: 14px
+  line-height: 19px
+  color: #646464
+
+.password-show-hide
+  .input-group-text
+    z-index: 3
+    position: absolute
+    right: 0
+    top: calc(100%/2 - 17px)
+.eventShowPass
+  cursor: pointer
+
+
+.form
+  &-submit
+    button
+      display: block
+      max-width: max-content
+      margin: 30px  auto 110px auto
+      border: 0
+      background-color: $dark
+      padding: 16px 78px
+      color: #FFFFFF
+      font-family: $nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 22px
+.swiper-slide-thumb-active
+  opacity: 1
+
+.product
+  &_desc
+    margin-top: 10px
+    line-height: 22px
+    color: $dark
+    font-weight: 300
+  &_characteristic
+    &-content
+      margin-bottom: 30px
+      .info
+        &:first-child
+          margin-top: 10px
+        display: flex
+        font-family: $nunito
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 22px
+        color: #242424
+        margin-bottom: 10px
+    .dotts
+      color: #CCCCCC
+
+  &_like
+    display: block
+    font-family: $nunito
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    text-decoration-line: underline !important
+    text-decoration-skip-ink: none
+    color: #242424
+    svg
+      margin-right: 30px
+
+  &_prices
+    .item_new_price
+      font-weight: 600 !important
+      font-size: 20px !important
+      line-height: 27px !important
+  &_prices, &_sizes, &_like, &_cart
+    margin-top: 30px
+  &_articul
+    margin-top: 5px
+  &_name
+    font-family: $palatino
+    font-style: normal
+    font-weight: 400
+    font-size: 36px
+    line-height: 49px
+    color: #000000
+    max-width: 332px
+
+  &_cart
+    min-width: 200px
+    text-align: center
+    border: 1px solid transparent
+
+    &:hover
+      background-color: transparent
+      color: $dark !important
+      border: 1px solid $dark
+  &_sizes
+    span
+      display: block
+      font-family: $nunito
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: #242424
+      margin-bottom: 10px
+  &_size
+    min-width: 57px
+    display: inline
+    justify-content: center
+    align-items: center
+    padding: 14px 6px
+    background-color: transparent
+    border: 1px solid #DEDEDE
+    font-family: $nunito
+    font-style: normal
+    font-weight: 300
+    font-size: 20px
+    line-height: 27px
+    color: #242424
+    &:focus
+      background: $dark
+      color: #FFFFFF
+  &_images
+    display: flex
+    flex-wrap: wrap
+  &_image
+    max-width: 464px
+    width: 100%
+    margin-right: 16px
+    margin-bottom: 16px
+    img
+      width: 100%
+  &-padding
+    padding-bottom: 100px
+  &-section
+    .video-content
+      top: calc(50% - 205px)
+
+
+.display-lg
+  display: block
 //Адаптив
 @import "media"

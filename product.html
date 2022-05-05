@@ -16,10 +16,7 @@
             href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="css/custom.css?v=5">
-    <link rel="stylesheet" href="css/main.css?v=-----22--">
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
-
+    <link rel="stylesheet" href="css/main.css?v=-----3121221332--">
     <title>Rainbow</title>
 </head>
 <body class="catalog">
@@ -45,11 +42,11 @@
 <div class="header-wrapper">
     <div class="header-content-title">Меню</div>
     <div class="header-content">
-        <li class="">
-            <a href="/">Главная</a>
+        <li>
+            <a href="#">Главная</a>
         </li>
-        <li class="active">
-            <a href="#">Каталог</a>
+        <li>
+            <a href="catalog.html">Каталог</a>
         </li>
         <li>
             <a href="#">Как заказать</a>
@@ -146,10 +143,6 @@
                     <div class="search-form">
                         <form class="input-group">
                             <div class="input-group-prepend catalog-input mr-0">
-                                <!--                                <select class="custom-select border-0" id="inlineFormCustomSelect" name="catalog">-->
-                                <!--                                    <option selected>товары</option>-->
-                                <!--                                    <option>Лупа</option>-->
-                                <!--                                </select>-->
                                 <div class="dropdown">
                                     <div class="custom-select border-0" type="button" id="inlineFormCustomSelect"
                                          data-toggle="dropdown" aria-expanded="false">
@@ -224,8 +217,8 @@
             <div class="row  justify-content-center">
                 <div class="col-md-8">
                     <div class="header-top-bottom_links">
-                        <a href="/" class="active">Главная</a>
-                        <a href="#">Каталог</a>
+                        <a href="/">Главная</a>
+                        <a href="catalog.html">Каталог</a>
                         <a href="#">Как заказать</a>
                         <a href="#">Оплата</a>
                     </div>
@@ -234,7 +227,7 @@
         </div>
     </div>
 </header>
-<main>
+<main class="product-padding">
     <div class="breadcrumb-wrapper">
         <div class="container">
             <div class="row">
@@ -249,242 +242,164 @@
             </div>
         </div>
     </div>
-    <div class="mobile_filter-wrapper display-mobile h-100">
-      <div class="d-flex align-items-start justify-content-center padding-14">
-          <button class="border-0 bg-transparent filter_show" style="height: 43px;">
-              <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0.93934 10.9393C0.353553 11.5251 0.353553 12.4749 0.93934 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.93934 10.9393ZM4 10.5H2V13.5H4V10.5Z" fill="#242424"/>
-              </svg>
-          </button>
-          <div class="page-title w-100">Фильтры</div>
-      </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 display-mobile page_name">
-               <div class="container p-0">
-                   <div class="row">
-                       <div class="col-md-9 col-9">
-                           <div class="page-title">Каталог</div>
-                       </div>
-                       <div class="col-md-3 col-3 d-flex align-items-center justify-content-end">
-                           <button class="border-0 bg-transparent filter_show">
-                               <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                   <path d="M0 6.13953C0 5.21478 0.815482 4.46512 1.82143 4.46512H6.07143V7.81395H1.82143C0.815482 7.81395 0 7.06429 0 6.13953Z" fill="#242424"/>
-                                   <path d="M0 17.8605C0 16.9357 0.815482 16.186 1.82143 16.186H17V19.5349H1.82143C0.815482 19.5349 0 18.7852 0 17.8605Z" fill="#242424"/>
-                                   <path d="M34 6.13953C34 5.21478 33.1845 4.46512 32.1786 4.46512H17V7.81395H32.1786C33.1845 7.81395 34 7.06429 34 6.13953Z" fill="#242424"/>
-                                   <path d="M34 17.8605C34 16.9357 33.1845 16.186 32.1786 16.186H27.9286V19.5349H32.1786C33.1845 19.5349 34 18.7852 34 17.8605Z" fill="#242424"/>
-                                   <path d="M18.2143 6.13953C18.2143 9.53031 15.2242 12.2791 11.5357 12.2791C7.84724 12.2791 4.85714 9.53031 4.85714 6.13953C4.85714 2.74876 7.84724 0 11.5357 0C15.2242 0 18.2143 2.74876 18.2143 6.13953ZM8.29609 6.13953C8.29609 7.78432 9.74652 9.11768 11.5357 9.11768C13.3249 9.11768 14.7753 7.78432 14.7753 6.13953C14.7753 4.49475 13.3249 3.16139 11.5357 3.16139C9.74652 3.16139 8.29609 4.49475 8.29609 6.13953Z" fill="#242424"/>
-                                   <path d="M29.1429 17.8605C29.1429 21.2512 26.1528 24 22.4643 24C18.7758 24 15.7857 21.2512 15.7857 17.8605C15.7857 14.4697 18.7758 11.7209 22.4643 11.7209C26.1528 11.7209 29.1429 14.4697 29.1429 17.8605ZM19.2247 17.8605C19.2247 19.5053 20.6751 20.8386 22.4643 20.8386C24.2535 20.8386 25.7039 19.5053 25.7039 17.8605C25.7039 16.2157 24.2535 14.8823 22.4643 14.8823C20.6751 14.8823 19.2247 16.2157 19.2247 17.8605Z" fill="#242424"/>
-                               </svg>
-                           </button>
-                       </div>
-                   </div>
-               </div>
-            </div>
-        </div>
-    </div>
-    <hr class="mb-3 mt-0 display-mobile">
-    <div class="container mb-5 display-mobile">
-        <div class="flex-wrap d-flex">
-            <div class="filter-badge">
-                Gianvito Rossi
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 6L11 11M1 11L6 6L1 11ZM11 1L5.99905 6L11 1ZM5.99905 6L1 1L5.99905 6Z" stroke="#242424" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="filter-badge">
-                Hermes
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 6L11 11M1 11L6 6L1 11ZM11 1L5.99905 6L11 1ZM5.99905 6L1 1L5.99905 6Z" stroke="#242424" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-3">
-                <div class="filters">
-                    <div class="filters_block">
-                        <div class="filters_title" data-drop="priceDrop">
-                            Цена
-                        </div>
-                        <div class="filters_range  filters_content" id="priceDrop">
-                            <input type="text" class="js-range-slider" name="my_range" value=""
-                                   data-type="double"
-                                   data-min="1500"
-                                   data-max="10000"
-                                   data-skin="square"
-                                   data-from="1000"
-                                   data-to="2500"
-                            />
-                        </div>
-                        <div class="filters_title" data-drop="brands">
-                            Бренд
-                        </div>
-                        <div class="filters_range  filters_content" id="brands">
-                            <div class="swiper filters_brands">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <label class="check option" for="brand">
-                                            <input class="check__input" type="checkbox" name="brands" id="brand"
-                                                   >
-                                            <span class="check__box"></span>
-                                            <span class="check__box-text">Chanel</span>
-                                        </label>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <label class="check option" for="brand1">
-                                            <input class="check__input" type="checkbox" name="brands" id="brand1"
-                                                   >
-                                            <span class="check__box"></span>
-                                            <span class="check__box-text">Chanel</span>
-                                        </label>
+    <div class="display-mobile" >
+        <div class="swiper" id="product_images">
+            <div class="swiper-wrapper">
 
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <label class="check option" for="brand2">
-                                            <input class="check__input" type="checkbox" name="brands" id="brand2"
-                                                   >
-                                            <span class="check__box"></span>
-                                            <span class="check__box-text">Chanel</span>
-                                        </label>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <label class="check option" for="brand3">
-                                            <input class="check__input" type="checkbox" name="brands" id="brand3"
-                                                   >
-                                            <span class="check__box"></span>
-                                            <span class="check__box-text">Chanel</span>
-                                        </label>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <label class="check option" for="brand4">
-                                            <input class="check__input" type="checkbox" name="brands" id="brand4"
-                                                   >
-                                            <span class="check__box"></span>
-                                            <span class="check__box-text">Chanel</span>
-                                        </label>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <label class="check option" for="brand5">
-                                            <input class="check__input" type="checkbox" name="brands" id="brand5"
-                                                   >
-                                            <span class="check__box"></span>
-                                            <span class="check__box-text">Chanel</span>
-                                        </label>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <label class="check option" for="brand6">
-                                            <input class="check__input" type="checkbox" name="brands" id="brand6"
-                                                   >
-                                            <span class="check__box"></span>
-                                            <span class="check__box-text">Chanel</span>
-                                        </label>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <label class="check option" for="brand7">
-                                            <input class="check__input" type="checkbox" name="brands" id="brand7"
-                                                   >
-                                            <span class="check__box"></span>
-                                            <span class="check__box-text">Chanel</span>
-                                        </label>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <label class="check option" for="brand8">
-                                            <input class="check__input" type="checkbox" name="brands" id="brand8"
-                                                   >
-                                            <span class="check__box"></span>
-                                            <span class="check__box-text">Chanel</span>
-                                        </label>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <label class="check option" for="brand9">
-                                            <input class="check__input" type="checkbox" name="brands" id="brand9"
-                                                   >
-                                            <span class="check__box"></span>
-                                            <span class="check__box-text">Chanel</span>
-                                        </label>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <label class="check option" for="brand91">
-                                            <input class="check__input" type="checkbox" name="brands" id="brand91"
-                                                   >
-                                            <span class="check__box"></span>
-                                            <span class="check__box-text">Chanel</span>
-                                        </label>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <label class="check option" for="brand92">
-                                            <input class="check__input" type="checkbox" name="brands" id="brand92"
-                                                   >
-                                            <span class="check__box"></span>
-                                            <span class="check__box-text">Chanel</span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="swiper-scrollbar filters_scrollbar"></div>
-                            </div>
-                        </div>
-                        <div class="filters_title" data-drop="komy">
-                            Для кого?
-                        </div>
-                        <div class="filters_range filters_content" id="komy">
-                            <label class="check option" for="female">
-                                <input class="check__input" type="checkbox" name="komy" id="female"
-                                >
-                                <span class="check__box"></span>
-                                <span class="check__box-text">Женское</span>
-                            </label>
-                            <label class="check option" for="male">
-                                <input class="check__input" type="checkbox" name="komy" id="male"
-                                       checked>
-                                <span class="check__box"></span>
-                                <span class="check__box-text">Мужское</span>
-                            </label>
-                            <label class="check option" for="kids">
-                                <input class="check__input" type="checkbox" name="komy" id="kids"
-                                >
-                                <span class="check__box"></span>
-                                <span class="check__box-text">Детское</span>
-                            </label>
-                            <label class="check option" for="unisex">
-                                <input class="check__input" type="checkbox" name="komy" id="unisex"
-                                >
-                                <span class="check__box"></span>
-                                <span class="check__box-text">Унисекс</span>
-                            </label>
-                        </div>
-                        <div class="filters_title" data-drop="type">
-                            Тип
-                        </div>
-                        <div class="filters_range filters_content" id="type">
-                            тест
-                        </div>
-                        <div class="filters_title" data-drop="color">
-                            Цвет
-                        </div>
-                        <div class="filters_range filters_content" id="color">
-                            тест
-                        </div>
-                        <div class="filters_title" data-drop="promo">
-                            Скидки, акции
-                        </div>
-                        <div class="filters_range filters_content" id="promo">
-                            тест
-                        </div>
-                    </div>
-                    <div class="filters_footer">
-                        <a href="javascript:;" class="filter_reset">
-                            Сбросить фильтр
-                        </a>
-                        <a href="#" class="filter_sale_btn">Продать товар</a>
-                    </div>
+            </div>
+            <div class="swiper-pagination product_image-pagination"></div>
+        </div>
+    </div>
+    <div class="display-mobile">
+        <div class="container catalog items">
+            <div class="item_articul product_articul my-3">
+                Арт: 9242-130-IF-Q
+            </div>
+            <div class="swiper" id="product_images-nav">
+                <div class="swiper-wrapper">
+
                 </div>
             </div>
-            <div class="col-12 col-md-9 padding-14 filter-padding">
-                <div class="catalog items filter flex-wrap">
-                    <div class="item">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8 product_images">
+                <div class="product_image">
+                    <img src="img/product.png" alt="">
+                </div>
+                <div class="product_image">
+                    <img src="img/product.png" alt="">
+                </div>
+                <div class="product_image">
+                    <img src="img/product.png" alt="">
+                </div>
+                <div class="product_image">
+                    <img src="img/product.png" alt="">
+                </div>
+                <div class="product_image">
+                    <img src="img/product.png" alt="">
+                </div>
+                <div class="product_image">
+                    <img src="img/product.png" alt="">
+                </div>
+                <div class="product_image">
+                    <img src="img/product.png" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 catalog items">
+                <div class="product_name">Тренч удлиненный черного цвета</div>
+                <div class="item_articul product_articul display-lg">Арт: 9242-130-IF-Q</div>
+                <div class="d-flex align-items-center product_prices">
+                    <div class="item_new_price mr-4">112 426 ₽</div>
+                    <div class="item_old_price mt-0">112 426 ₽</div>
+                </div>
+                <div class="product_sizes">
+                    <span>Выберите размер:</span>
+                    <button class="product_size">X</button>
+                    <button class="product_size">Xl</button>
+                    <button class="product_size">XX</button>
+                    <button class="product_size">XXXl</button>
+                </div>
+                <a href="#" class="mx-0 filter_sale_btn product_cart">В корзину</a>
+                <a class="product_like" href="#">
+                    <svg width="34" height="30" viewBox="0 0 34 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 30L16.4 29.4949C3.5 18.8889 0 15.1515 0 9.09091C0 4.0404 4 0 9 0C13.1 0 15.4 2.32323 17 4.14141C18.6 2.32323 20.9 0 25 0C30 0 34 4.0404 34 9.09091C34 15.1515 30.5 18.8889 17.6 29.4949L17 30ZM9 2.0202C5.1 2.0202 2 5.15152 2 9.09091C2 14.2424 5.2 17.6768 17 27.3737C28.8 17.6768 32 14.2424 32 9.09091C32 5.15152 28.9 2.0202 25 2.0202C21.5 2.0202 19.6 4.14141 18.1 5.85859L17 7.17172L15.9 5.85859C14.4 4.14141 12.5 2.0202 9 2.0202Z"
+                              fill="#242424"/>
+                    </svg>Добавить в избранное
+                </a>
+                <div class="product_characteristic product_sizes">
+                    <span class="product_characteristic-title">Характеристики: </span>
+                    <div class="product_characteristic-content">
+                        <div class="info">
+                            <div class="">Состояние товара:</div>
+                            <div class="dotts">____________________</div>
+                            <div class="">С биркой</div>
+                        </div>
+                        <div class="info">
+                            <div class="">Цвет:</div>
+                            <div class="dotts">____________________</div>
+                            <div class="">Черный</div>
+                        </div>
+                        <div class="info">
+                            <div class="">Бренд:</div>
+                            <div class="dotts">____________________</div>
+                            <div class="">Burberry</div>
+                        </div>
+                        <div class="info">
+                            <div class="">Продавец:</div>
+                            <div class="dotts">____________________</div>
+                            <div class="">Deykun.Studio</div>
+                        </div>
+                        <div class="info">
+                            <div class="">Материал:</div>
+                            <div class="dotts">____________________</div>
+                            <div class="">Хлопок</div>
+                        </div>
+                        <div class="info">
+                            <div class="">Арт. Rainbow:</div>
+                            <div class="dotts">____________________</div>
+                            <div class="">9242-130-IF-Q</div>
+                        </div>
+                    </div>
+                    <span>Описание:</span>
+                    <div class="product_desc">
+                        Как принято считать, элементы политического процесса, которые представляют собой яркий пример
+                        континентально-европейского типа политической культуры, будут заблокированы в рамках своих
+                        собственных рациональных ограничений. А также элементы политического процесса заблокированы в
+                        рамках своих собственных рациональных ограничений. Для современного мира сплочённость команды
+                        профессионалов, в своём классическом представлении, допускает внедрение первоочередных
+                        требований. Как принято считать, активно развивающиеся страны третьего мира набирают
+                        популярность среди определенных слоев населения, а значит, должны быть подвергнуты целой серии
+                        независимых исследований.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="video">
+        <div class="section product-section">
+            <div class="video-section">
+                <video autoplay muted loop id="video">
+                    <source src="video/2.mp4" type="video/mp4">
+                </video>
+                <div class="container">
+                    <div class="video-content">
+                        <div class="video_title">
+                            Доставка и оплата
+                        </div>
+                        <div class="video_description">
+                            - Заполните свой профиль (Личные данные, адрес) <br>
+                            - Добавьте нужный товар в корзину.<br>
+                            - Перейдите в корзину и оформите заказ.<br>
+                            - После получения заявки и оплаты ваши средства замораживаются на нашем счету до момента
+                            получения вами товара.<br>
+                            - Мы проверяем товар продавца на качество и подлинность, если все хорошо, отправляем его
+                            вам.<br>
+                            - Курьер доставит товар к вашей двери.<br>
+                            - Хвастайтесь новой вещью! :)<br>
+                            <p class="mt-4 mb-0">
+                                Все данные о вашей банковской карте, счете и имени в полной безопасности. <br> Наш сайт
+                                не допускает утечек данных клиентов, так же, наш сайт работает по защищенному протоколу,
+                                а это значит, что никто не узнает и символа из ваших реквизитов
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section  section-recomendation">
+            <div class="section_title text-center">
+                Рекомендуем
+            </div>
+            <div class="swiper catalog-slides">
+                <div class="catalog items swiper-wrapper">
+                    <div class="swiper-slide item">
                         <div class="item_img">
                             <img src="img/item.png" alt="">
                         </div>
@@ -506,7 +421,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="swiper-slide item">
                         <div class="item_img">
                             <img src="img/item.png" alt="">
                         </div>
@@ -528,7 +443,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="swiper-slide item">
                         <div class="item_img">
                             <img src="img/item.png" alt="">
                         </div>
@@ -550,7 +465,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="swiper-slide item">
                         <div class="item_img">
                             <img src="img/item.png" alt="">
                         </div>
@@ -572,7 +487,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="swiper-slide item">
                         <div class="item_img">
                             <img src="img/item.png" alt="">
                         </div>
@@ -594,7 +509,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="swiper-slide item">
                         <div class="item_img">
                             <img src="img/item.png" alt="">
                         </div>
@@ -616,7 +531,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="swiper-slide item">
                         <div class="item_img">
                             <img src="img/item.png" alt="">
                         </div>
@@ -638,95 +553,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="item_img">
-                            <img src="img/item.png" alt="">
-                        </div>
-                        <div class="item-border">
-                            <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                            <div class="item_name">
-                                Пальто демисезонное Драповое бежевого цвета
-                            </div>
-                            <div class="item_old_price">85 800 р.</div>
-                            <div class="item_new_price">
-                                56 960 ₽
-                                <a href="#" class="add-cart">
-                                    <svg width="36" height="30" viewBox="0 0 36 30" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M33.84 0H2.16C1.58713 0 1.03773 0.225764 0.632649 0.627628C0.227571 1.02949 0 1.57454 0 2.14286V27.8571C0 28.4255 0.227571 28.9705 0.632649 29.3724C1.03773 29.7742 1.58713 30 2.16 30H33.84C34.4129 30 34.9623 29.7742 35.3674 29.3724C35.7724 28.9705 36 28.4255 36 27.8571V2.14286C36 1.57454 35.7724 1.02949 35.3674 0.627628C34.9623 0.225764 34.4129 0 33.84 0ZM34.56 27.8571C34.56 28.0466 34.4841 28.2283 34.3491 28.3622C34.2141 28.4962 34.031 28.5714 33.84 28.5714H2.16C1.96904 28.5714 1.78591 28.4962 1.65088 28.3622C1.51586 28.2283 1.44 28.0466 1.44 27.8571V2.14286C1.44 1.95342 1.51586 1.77174 1.65088 1.63778C1.78591 1.50383 1.96904 1.42857 2.16 1.42857H33.84C34.031 1.42857 34.2141 1.50383 34.3491 1.63778C34.4841 1.77174 34.56 1.95342 34.56 2.14286V27.8571ZM25.92 7.85714C25.92 9.94099 25.0856 11.9395 23.6003 13.413C22.115 14.8865 20.1005 15.7143 18 15.7143C15.8995 15.7143 13.885 14.8865 12.3997 13.413C10.9144 11.9395 10.08 9.94099 10.08 7.85714C10.08 7.6677 10.1559 7.48602 10.2909 7.35207C10.4259 7.21811 10.609 7.14286 10.8 7.14286C10.991 7.14286 11.1741 7.21811 11.3091 7.35207C11.4441 7.48602 11.52 7.6677 11.52 7.85714C11.52 9.56211 12.2027 11.1972 13.4179 12.4028C14.6332 13.6084 16.2814 14.2857 18 14.2857C19.7186 14.2857 21.3668 13.6084 22.5821 12.4028C23.7973 11.1972 24.48 9.56211 24.48 7.85714C24.48 7.6677 24.5559 7.48602 24.6909 7.35207C24.8259 7.21811 25.009 7.14286 25.2 7.14286C25.391 7.14286 25.5741 7.21811 25.7091 7.35207C25.8441 7.48602 25.92 7.6677 25.92 7.85714Z"
-                                              fill="#242424"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item_img">
-                            <img src="img/item.png" alt="">
-                        </div>
-                        <div class="item-border">
-                            <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                            <div class="item_name">
-                                Пальто демисезонное Драповое бежевого цвета
-                            </div>
-                            <div class="item_old_price">85 800 р.</div>
-                            <div class="item_new_price">
-                                56 960 ₽
-                                <a href="#" class="add-cart">
-                                    <svg width="36" height="30" viewBox="0 0 36 30" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M33.84 0H2.16C1.58713 0 1.03773 0.225764 0.632649 0.627628C0.227571 1.02949 0 1.57454 0 2.14286V27.8571C0 28.4255 0.227571 28.9705 0.632649 29.3724C1.03773 29.7742 1.58713 30 2.16 30H33.84C34.4129 30 34.9623 29.7742 35.3674 29.3724C35.7724 28.9705 36 28.4255 36 27.8571V2.14286C36 1.57454 35.7724 1.02949 35.3674 0.627628C34.9623 0.225764 34.4129 0 33.84 0ZM34.56 27.8571C34.56 28.0466 34.4841 28.2283 34.3491 28.3622C34.2141 28.4962 34.031 28.5714 33.84 28.5714H2.16C1.96904 28.5714 1.78591 28.4962 1.65088 28.3622C1.51586 28.2283 1.44 28.0466 1.44 27.8571V2.14286C1.44 1.95342 1.51586 1.77174 1.65088 1.63778C1.78591 1.50383 1.96904 1.42857 2.16 1.42857H33.84C34.031 1.42857 34.2141 1.50383 34.3491 1.63778C34.4841 1.77174 34.56 1.95342 34.56 2.14286V27.8571ZM25.92 7.85714C25.92 9.94099 25.0856 11.9395 23.6003 13.413C22.115 14.8865 20.1005 15.7143 18 15.7143C15.8995 15.7143 13.885 14.8865 12.3997 13.413C10.9144 11.9395 10.08 9.94099 10.08 7.85714C10.08 7.6677 10.1559 7.48602 10.2909 7.35207C10.4259 7.21811 10.609 7.14286 10.8 7.14286C10.991 7.14286 11.1741 7.21811 11.3091 7.35207C11.4441 7.48602 11.52 7.6677 11.52 7.85714C11.52 9.56211 12.2027 11.1972 13.4179 12.4028C14.6332 13.6084 16.2814 14.2857 18 14.2857C19.7186 14.2857 21.3668 13.6084 22.5821 12.4028C23.7973 11.1972 24.48 9.56211 24.48 7.85714C24.48 7.6677 24.5559 7.48602 24.6909 7.35207C24.8259 7.21811 25.009 7.14286 25.2 7.14286C25.391 7.14286 25.5741 7.21811 25.7091 7.35207C25.8441 7.48602 25.92 7.6677 25.92 7.85714Z"
-                                              fill="#242424"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item_img">
-                            <img src="img/item.png" alt="">
-                        </div>
-                        <div class="item-border">
-                            <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                            <div class="item_name">
-                                Пальто демисезонное Драповое бежевого цвета
-                            </div>
-                            <div class="item_old_price">85 800 р.</div>
-                            <div class="item_new_price">
-                                56 960 ₽
-                                <a href="#" class="add-cart">
-                                    <svg width="36" height="30" viewBox="0 0 36 30" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M33.84 0H2.16C1.58713 0 1.03773 0.225764 0.632649 0.627628C0.227571 1.02949 0 1.57454 0 2.14286V27.8571C0 28.4255 0.227571 28.9705 0.632649 29.3724C1.03773 29.7742 1.58713 30 2.16 30H33.84C34.4129 30 34.9623 29.7742 35.3674 29.3724C35.7724 28.9705 36 28.4255 36 27.8571V2.14286C36 1.57454 35.7724 1.02949 35.3674 0.627628C34.9623 0.225764 34.4129 0 33.84 0ZM34.56 27.8571C34.56 28.0466 34.4841 28.2283 34.3491 28.3622C34.2141 28.4962 34.031 28.5714 33.84 28.5714H2.16C1.96904 28.5714 1.78591 28.4962 1.65088 28.3622C1.51586 28.2283 1.44 28.0466 1.44 27.8571V2.14286C1.44 1.95342 1.51586 1.77174 1.65088 1.63778C1.78591 1.50383 1.96904 1.42857 2.16 1.42857H33.84C34.031 1.42857 34.2141 1.50383 34.3491 1.63778C34.4841 1.77174 34.56 1.95342 34.56 2.14286V27.8571ZM25.92 7.85714C25.92 9.94099 25.0856 11.9395 23.6003 13.413C22.115 14.8865 20.1005 15.7143 18 15.7143C15.8995 15.7143 13.885 14.8865 12.3997 13.413C10.9144 11.9395 10.08 9.94099 10.08 7.85714C10.08 7.6677 10.1559 7.48602 10.2909 7.35207C10.4259 7.21811 10.609 7.14286 10.8 7.14286C10.991 7.14286 11.1741 7.21811 11.3091 7.35207C11.4441 7.48602 11.52 7.6677 11.52 7.85714C11.52 9.56211 12.2027 11.1972 13.4179 12.4028C14.6332 13.6084 16.2814 14.2857 18 14.2857C19.7186 14.2857 21.3668 13.6084 22.5821 12.4028C23.7973 11.1972 24.48 9.56211 24.48 7.85714C24.48 7.6677 24.5559 7.48602 24.6909 7.35207C24.8259 7.21811 25.009 7.14286 25.2 7.14286C25.391 7.14286 25.5741 7.21811 25.7091 7.35207C25.8441 7.48602 25.92 7.6677 25.92 7.85714Z"
-                                              fill="#242424"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item_img">
-                            <img src="img/item.png" alt="">
-                        </div>
-                        <div class="item-border">
-                            <div class="item_articul">Арт: 9242-130-IF-Q</div>
-                            <div class="item_name">
-                                Пальто демисезонное Драповое бежевого цвета
-                            </div>
-                            <div class="item_old_price">85 800 р.</div>
-                            <div class="item_new_price">
-                                56 960 ₽
-                                <a href="#" class="add-cart">
-                                    <svg width="36" height="30" viewBox="0 0 36 30" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M33.84 0H2.16C1.58713 0 1.03773 0.225764 0.632649 0.627628C0.227571 1.02949 0 1.57454 0 2.14286V27.8571C0 28.4255 0.227571 28.9705 0.632649 29.3724C1.03773 29.7742 1.58713 30 2.16 30H33.84C34.4129 30 34.9623 29.7742 35.3674 29.3724C35.7724 28.9705 36 28.4255 36 27.8571V2.14286C36 1.57454 35.7724 1.02949 35.3674 0.627628C34.9623 0.225764 34.4129 0 33.84 0ZM34.56 27.8571C34.56 28.0466 34.4841 28.2283 34.3491 28.3622C34.2141 28.4962 34.031 28.5714 33.84 28.5714H2.16C1.96904 28.5714 1.78591 28.4962 1.65088 28.3622C1.51586 28.2283 1.44 28.0466 1.44 27.8571V2.14286C1.44 1.95342 1.51586 1.77174 1.65088 1.63778C1.78591 1.50383 1.96904 1.42857 2.16 1.42857H33.84C34.031 1.42857 34.2141 1.50383 34.3491 1.63778C34.4841 1.77174 34.56 1.95342 34.56 2.14286V27.8571ZM25.92 7.85714C25.92 9.94099 25.0856 11.9395 23.6003 13.413C22.115 14.8865 20.1005 15.7143 18 15.7143C15.8995 15.7143 13.885 14.8865 12.3997 13.413C10.9144 11.9395 10.08 9.94099 10.08 7.85714C10.08 7.6677 10.1559 7.48602 10.2909 7.35207C10.4259 7.21811 10.609 7.14286 10.8 7.14286C10.991 7.14286 11.1741 7.21811 11.3091 7.35207C11.4441 7.48602 11.52 7.6677 11.52 7.85714C11.52 9.56211 12.2027 11.1972 13.4179 12.4028C14.6332 13.6084 16.2814 14.2857 18 14.2857C19.7186 14.2857 21.3668 13.6084 22.5821 12.4028C23.7973 11.1972 24.48 9.56211 24.48 7.85714C24.48 7.6677 24.5559 7.48602 24.6909 7.35207C24.8259 7.21811 25.009 7.14286 25.2 7.14286C25.391 7.14286 25.5741 7.21811 25.7091 7.35207C25.8441 7.48602 25.92 7.6677 25.92 7.85714Z"
-                                              fill="#242424"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
+                    <div class="swiper-slide item">
                         <div class="item_img">
                             <img src="img/item.png" alt="">
                         </div>
@@ -749,13 +576,195 @@
                         </div>
                     </div>
                 </div>
-                <div class="pagination">
-                    <a href="#">1</a>
-                    <a href="#" class="active">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section pad">
+            <div class="section_title text-center">
+                Недавно просмотренное
+            </div>
+            <div class="swiper catalog-slides">
+                <div class="catalog items swiper-wrapper">
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/item.png" alt="">
+                        </div>
+                        <div class="item-border">
+                            <div class="item_articul">Арт: 9242-130-IF-Q</div>
+                            <div class="item_name">
+                                Пальто демисезонное Драповое бежевого цвета
+                            </div>
+                            <div class="item_old_price">85 800 р.</div>
+                            <div class="item_new_price">
+                                56 960 ₽
+                                <a href="#" class="add-cart">
+                                    <svg width="36" height="30" viewBox="0 0 36 30" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M33.84 0H2.16C1.58713 0 1.03773 0.225764 0.632649 0.627628C0.227571 1.02949 0 1.57454 0 2.14286V27.8571C0 28.4255 0.227571 28.9705 0.632649 29.3724C1.03773 29.7742 1.58713 30 2.16 30H33.84C34.4129 30 34.9623 29.7742 35.3674 29.3724C35.7724 28.9705 36 28.4255 36 27.8571V2.14286C36 1.57454 35.7724 1.02949 35.3674 0.627628C34.9623 0.225764 34.4129 0 33.84 0ZM34.56 27.8571C34.56 28.0466 34.4841 28.2283 34.3491 28.3622C34.2141 28.4962 34.031 28.5714 33.84 28.5714H2.16C1.96904 28.5714 1.78591 28.4962 1.65088 28.3622C1.51586 28.2283 1.44 28.0466 1.44 27.8571V2.14286C1.44 1.95342 1.51586 1.77174 1.65088 1.63778C1.78591 1.50383 1.96904 1.42857 2.16 1.42857H33.84C34.031 1.42857 34.2141 1.50383 34.3491 1.63778C34.4841 1.77174 34.56 1.95342 34.56 2.14286V27.8571ZM25.92 7.85714C25.92 9.94099 25.0856 11.9395 23.6003 13.413C22.115 14.8865 20.1005 15.7143 18 15.7143C15.8995 15.7143 13.885 14.8865 12.3997 13.413C10.9144 11.9395 10.08 9.94099 10.08 7.85714C10.08 7.6677 10.1559 7.48602 10.2909 7.35207C10.4259 7.21811 10.609 7.14286 10.8 7.14286C10.991 7.14286 11.1741 7.21811 11.3091 7.35207C11.4441 7.48602 11.52 7.6677 11.52 7.85714C11.52 9.56211 12.2027 11.1972 13.4179 12.4028C14.6332 13.6084 16.2814 14.2857 18 14.2857C19.7186 14.2857 21.3668 13.6084 22.5821 12.4028C23.7973 11.1972 24.48 9.56211 24.48 7.85714C24.48 7.6677 24.5559 7.48602 24.6909 7.35207C24.8259 7.21811 25.009 7.14286 25.2 7.14286C25.391 7.14286 25.5741 7.21811 25.7091 7.35207C25.8441 7.48602 25.92 7.6677 25.92 7.85714Z"
+                                              fill="#242424"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/item.png" alt="">
+                        </div>
+                        <div class="item-border">
+                            <div class="item_articul">Арт: 9242-130-IF-Q</div>
+                            <div class="item_name">
+                                Пальто демисезонное Драповое бежевого цвета
+                            </div>
+                            <div class="item_old_price">85 800 р.</div>
+                            <div class="item_new_price">
+                                56 960 ₽
+                                <a href="#" class="add-cart">
+                                    <svg width="36" height="30" viewBox="0 0 36 30" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M33.84 0H2.16C1.58713 0 1.03773 0.225764 0.632649 0.627628C0.227571 1.02949 0 1.57454 0 2.14286V27.8571C0 28.4255 0.227571 28.9705 0.632649 29.3724C1.03773 29.7742 1.58713 30 2.16 30H33.84C34.4129 30 34.9623 29.7742 35.3674 29.3724C35.7724 28.9705 36 28.4255 36 27.8571V2.14286C36 1.57454 35.7724 1.02949 35.3674 0.627628C34.9623 0.225764 34.4129 0 33.84 0ZM34.56 27.8571C34.56 28.0466 34.4841 28.2283 34.3491 28.3622C34.2141 28.4962 34.031 28.5714 33.84 28.5714H2.16C1.96904 28.5714 1.78591 28.4962 1.65088 28.3622C1.51586 28.2283 1.44 28.0466 1.44 27.8571V2.14286C1.44 1.95342 1.51586 1.77174 1.65088 1.63778C1.78591 1.50383 1.96904 1.42857 2.16 1.42857H33.84C34.031 1.42857 34.2141 1.50383 34.3491 1.63778C34.4841 1.77174 34.56 1.95342 34.56 2.14286V27.8571ZM25.92 7.85714C25.92 9.94099 25.0856 11.9395 23.6003 13.413C22.115 14.8865 20.1005 15.7143 18 15.7143C15.8995 15.7143 13.885 14.8865 12.3997 13.413C10.9144 11.9395 10.08 9.94099 10.08 7.85714C10.08 7.6677 10.1559 7.48602 10.2909 7.35207C10.4259 7.21811 10.609 7.14286 10.8 7.14286C10.991 7.14286 11.1741 7.21811 11.3091 7.35207C11.4441 7.48602 11.52 7.6677 11.52 7.85714C11.52 9.56211 12.2027 11.1972 13.4179 12.4028C14.6332 13.6084 16.2814 14.2857 18 14.2857C19.7186 14.2857 21.3668 13.6084 22.5821 12.4028C23.7973 11.1972 24.48 9.56211 24.48 7.85714C24.48 7.6677 24.5559 7.48602 24.6909 7.35207C24.8259 7.21811 25.009 7.14286 25.2 7.14286C25.391 7.14286 25.5741 7.21811 25.7091 7.35207C25.8441 7.48602 25.92 7.6677 25.92 7.85714Z"
+                                              fill="#242424"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/item.png" alt="">
+                        </div>
+                        <div class="item-border">
+                            <div class="item_articul">Арт: 9242-130-IF-Q</div>
+                            <div class="item_name">
+                                Пальто демисезонное Драповое бежевого цвета
+                            </div>
+                            <div class="item_old_price">85 800 р.</div>
+                            <div class="item_new_price">
+                                56 960 ₽
+                                <a href="#" class="add-cart">
+                                    <svg width="36" height="30" viewBox="0 0 36 30" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M33.84 0H2.16C1.58713 0 1.03773 0.225764 0.632649 0.627628C0.227571 1.02949 0 1.57454 0 2.14286V27.8571C0 28.4255 0.227571 28.9705 0.632649 29.3724C1.03773 29.7742 1.58713 30 2.16 30H33.84C34.4129 30 34.9623 29.7742 35.3674 29.3724C35.7724 28.9705 36 28.4255 36 27.8571V2.14286C36 1.57454 35.7724 1.02949 35.3674 0.627628C34.9623 0.225764 34.4129 0 33.84 0ZM34.56 27.8571C34.56 28.0466 34.4841 28.2283 34.3491 28.3622C34.2141 28.4962 34.031 28.5714 33.84 28.5714H2.16C1.96904 28.5714 1.78591 28.4962 1.65088 28.3622C1.51586 28.2283 1.44 28.0466 1.44 27.8571V2.14286C1.44 1.95342 1.51586 1.77174 1.65088 1.63778C1.78591 1.50383 1.96904 1.42857 2.16 1.42857H33.84C34.031 1.42857 34.2141 1.50383 34.3491 1.63778C34.4841 1.77174 34.56 1.95342 34.56 2.14286V27.8571ZM25.92 7.85714C25.92 9.94099 25.0856 11.9395 23.6003 13.413C22.115 14.8865 20.1005 15.7143 18 15.7143C15.8995 15.7143 13.885 14.8865 12.3997 13.413C10.9144 11.9395 10.08 9.94099 10.08 7.85714C10.08 7.6677 10.1559 7.48602 10.2909 7.35207C10.4259 7.21811 10.609 7.14286 10.8 7.14286C10.991 7.14286 11.1741 7.21811 11.3091 7.35207C11.4441 7.48602 11.52 7.6677 11.52 7.85714C11.52 9.56211 12.2027 11.1972 13.4179 12.4028C14.6332 13.6084 16.2814 14.2857 18 14.2857C19.7186 14.2857 21.3668 13.6084 22.5821 12.4028C23.7973 11.1972 24.48 9.56211 24.48 7.85714C24.48 7.6677 24.5559 7.48602 24.6909 7.35207C24.8259 7.21811 25.009 7.14286 25.2 7.14286C25.391 7.14286 25.5741 7.21811 25.7091 7.35207C25.8441 7.48602 25.92 7.6677 25.92 7.85714Z"
+                                              fill="#242424"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/item.png" alt="">
+                        </div>
+                        <div class="item-border">
+                            <div class="item_articul">Арт: 9242-130-IF-Q</div>
+                            <div class="item_name">
+                                Пальто демисезонное Драповое бежевого цвета
+                            </div>
+                            <div class="item_old_price">85 800 р.</div>
+                            <div class="item_new_price">
+                                56 960 ₽
+                                <a href="#" class="add-cart">
+                                    <svg width="36" height="30" viewBox="0 0 36 30" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M33.84 0H2.16C1.58713 0 1.03773 0.225764 0.632649 0.627628C0.227571 1.02949 0 1.57454 0 2.14286V27.8571C0 28.4255 0.227571 28.9705 0.632649 29.3724C1.03773 29.7742 1.58713 30 2.16 30H33.84C34.4129 30 34.9623 29.7742 35.3674 29.3724C35.7724 28.9705 36 28.4255 36 27.8571V2.14286C36 1.57454 35.7724 1.02949 35.3674 0.627628C34.9623 0.225764 34.4129 0 33.84 0ZM34.56 27.8571C34.56 28.0466 34.4841 28.2283 34.3491 28.3622C34.2141 28.4962 34.031 28.5714 33.84 28.5714H2.16C1.96904 28.5714 1.78591 28.4962 1.65088 28.3622C1.51586 28.2283 1.44 28.0466 1.44 27.8571V2.14286C1.44 1.95342 1.51586 1.77174 1.65088 1.63778C1.78591 1.50383 1.96904 1.42857 2.16 1.42857H33.84C34.031 1.42857 34.2141 1.50383 34.3491 1.63778C34.4841 1.77174 34.56 1.95342 34.56 2.14286V27.8571ZM25.92 7.85714C25.92 9.94099 25.0856 11.9395 23.6003 13.413C22.115 14.8865 20.1005 15.7143 18 15.7143C15.8995 15.7143 13.885 14.8865 12.3997 13.413C10.9144 11.9395 10.08 9.94099 10.08 7.85714C10.08 7.6677 10.1559 7.48602 10.2909 7.35207C10.4259 7.21811 10.609 7.14286 10.8 7.14286C10.991 7.14286 11.1741 7.21811 11.3091 7.35207C11.4441 7.48602 11.52 7.6677 11.52 7.85714C11.52 9.56211 12.2027 11.1972 13.4179 12.4028C14.6332 13.6084 16.2814 14.2857 18 14.2857C19.7186 14.2857 21.3668 13.6084 22.5821 12.4028C23.7973 11.1972 24.48 9.56211 24.48 7.85714C24.48 7.6677 24.5559 7.48602 24.6909 7.35207C24.8259 7.21811 25.009 7.14286 25.2 7.14286C25.391 7.14286 25.5741 7.21811 25.7091 7.35207C25.8441 7.48602 25.92 7.6677 25.92 7.85714Z"
+                                              fill="#242424"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/item.png" alt="">
+                        </div>
+                        <div class="item-border">
+                            <div class="item_articul">Арт: 9242-130-IF-Q</div>
+                            <div class="item_name">
+                                Пальто демисезонное Драповое бежевого цвета
+                            </div>
+                            <div class="item_old_price">85 800 р.</div>
+                            <div class="item_new_price">
+                                56 960 ₽
+                                <a href="#" class="add-cart">
+                                    <svg width="36" height="30" viewBox="0 0 36 30" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M33.84 0H2.16C1.58713 0 1.03773 0.225764 0.632649 0.627628C0.227571 1.02949 0 1.57454 0 2.14286V27.8571C0 28.4255 0.227571 28.9705 0.632649 29.3724C1.03773 29.7742 1.58713 30 2.16 30H33.84C34.4129 30 34.9623 29.7742 35.3674 29.3724C35.7724 28.9705 36 28.4255 36 27.8571V2.14286C36 1.57454 35.7724 1.02949 35.3674 0.627628C34.9623 0.225764 34.4129 0 33.84 0ZM34.56 27.8571C34.56 28.0466 34.4841 28.2283 34.3491 28.3622C34.2141 28.4962 34.031 28.5714 33.84 28.5714H2.16C1.96904 28.5714 1.78591 28.4962 1.65088 28.3622C1.51586 28.2283 1.44 28.0466 1.44 27.8571V2.14286C1.44 1.95342 1.51586 1.77174 1.65088 1.63778C1.78591 1.50383 1.96904 1.42857 2.16 1.42857H33.84C34.031 1.42857 34.2141 1.50383 34.3491 1.63778C34.4841 1.77174 34.56 1.95342 34.56 2.14286V27.8571ZM25.92 7.85714C25.92 9.94099 25.0856 11.9395 23.6003 13.413C22.115 14.8865 20.1005 15.7143 18 15.7143C15.8995 15.7143 13.885 14.8865 12.3997 13.413C10.9144 11.9395 10.08 9.94099 10.08 7.85714C10.08 7.6677 10.1559 7.48602 10.2909 7.35207C10.4259 7.21811 10.609 7.14286 10.8 7.14286C10.991 7.14286 11.1741 7.21811 11.3091 7.35207C11.4441 7.48602 11.52 7.6677 11.52 7.85714C11.52 9.56211 12.2027 11.1972 13.4179 12.4028C14.6332 13.6084 16.2814 14.2857 18 14.2857C19.7186 14.2857 21.3668 13.6084 22.5821 12.4028C23.7973 11.1972 24.48 9.56211 24.48 7.85714C24.48 7.6677 24.5559 7.48602 24.6909 7.35207C24.8259 7.21811 25.009 7.14286 25.2 7.14286C25.391 7.14286 25.5741 7.21811 25.7091 7.35207C25.8441 7.48602 25.92 7.6677 25.92 7.85714Z"
+                                              fill="#242424"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/item.png" alt="">
+                        </div>
+                        <div class="item-border">
+                            <div class="item_articul">Арт: 9242-130-IF-Q</div>
+                            <div class="item_name">
+                                Пальто демисезонное Драповое бежевого цвета
+                            </div>
+                            <div class="item_old_price">85 800 р.</div>
+                            <div class="item_new_price">
+                                56 960 ₽
+                                <a href="#" class="add-cart">
+                                    <svg width="36" height="30" viewBox="0 0 36 30" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M33.84 0H2.16C1.58713 0 1.03773 0.225764 0.632649 0.627628C0.227571 1.02949 0 1.57454 0 2.14286V27.8571C0 28.4255 0.227571 28.9705 0.632649 29.3724C1.03773 29.7742 1.58713 30 2.16 30H33.84C34.4129 30 34.9623 29.7742 35.3674 29.3724C35.7724 28.9705 36 28.4255 36 27.8571V2.14286C36 1.57454 35.7724 1.02949 35.3674 0.627628C34.9623 0.225764 34.4129 0 33.84 0ZM34.56 27.8571C34.56 28.0466 34.4841 28.2283 34.3491 28.3622C34.2141 28.4962 34.031 28.5714 33.84 28.5714H2.16C1.96904 28.5714 1.78591 28.4962 1.65088 28.3622C1.51586 28.2283 1.44 28.0466 1.44 27.8571V2.14286C1.44 1.95342 1.51586 1.77174 1.65088 1.63778C1.78591 1.50383 1.96904 1.42857 2.16 1.42857H33.84C34.031 1.42857 34.2141 1.50383 34.3491 1.63778C34.4841 1.77174 34.56 1.95342 34.56 2.14286V27.8571ZM25.92 7.85714C25.92 9.94099 25.0856 11.9395 23.6003 13.413C22.115 14.8865 20.1005 15.7143 18 15.7143C15.8995 15.7143 13.885 14.8865 12.3997 13.413C10.9144 11.9395 10.08 9.94099 10.08 7.85714C10.08 7.6677 10.1559 7.48602 10.2909 7.35207C10.4259 7.21811 10.609 7.14286 10.8 7.14286C10.991 7.14286 11.1741 7.21811 11.3091 7.35207C11.4441 7.48602 11.52 7.6677 11.52 7.85714C11.52 9.56211 12.2027 11.1972 13.4179 12.4028C14.6332 13.6084 16.2814 14.2857 18 14.2857C19.7186 14.2857 21.3668 13.6084 22.5821 12.4028C23.7973 11.1972 24.48 9.56211 24.48 7.85714C24.48 7.6677 24.5559 7.48602 24.6909 7.35207C24.8259 7.21811 25.009 7.14286 25.2 7.14286C25.391 7.14286 25.5741 7.21811 25.7091 7.35207C25.8441 7.48602 25.92 7.6677 25.92 7.85714Z"
+                                              fill="#242424"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/item.png" alt="">
+                        </div>
+                        <div class="item-border">
+                            <div class="item_articul">Арт: 9242-130-IF-Q</div>
+                            <div class="item_name">
+                                Пальто демисезонное Драповое бежевого цвета
+                            </div>
+                            <div class="item_old_price">85 800 р.</div>
+                            <div class="item_new_price">
+                                56 960 ₽
+                                <a href="#" class="add-cart">
+                                    <svg width="36" height="30" viewBox="0 0 36 30" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M33.84 0H2.16C1.58713 0 1.03773 0.225764 0.632649 0.627628C0.227571 1.02949 0 1.57454 0 2.14286V27.8571C0 28.4255 0.227571 28.9705 0.632649 29.3724C1.03773 29.7742 1.58713 30 2.16 30H33.84C34.4129 30 34.9623 29.7742 35.3674 29.3724C35.7724 28.9705 36 28.4255 36 27.8571V2.14286C36 1.57454 35.7724 1.02949 35.3674 0.627628C34.9623 0.225764 34.4129 0 33.84 0ZM34.56 27.8571C34.56 28.0466 34.4841 28.2283 34.3491 28.3622C34.2141 28.4962 34.031 28.5714 33.84 28.5714H2.16C1.96904 28.5714 1.78591 28.4962 1.65088 28.3622C1.51586 28.2283 1.44 28.0466 1.44 27.8571V2.14286C1.44 1.95342 1.51586 1.77174 1.65088 1.63778C1.78591 1.50383 1.96904 1.42857 2.16 1.42857H33.84C34.031 1.42857 34.2141 1.50383 34.3491 1.63778C34.4841 1.77174 34.56 1.95342 34.56 2.14286V27.8571ZM25.92 7.85714C25.92 9.94099 25.0856 11.9395 23.6003 13.413C22.115 14.8865 20.1005 15.7143 18 15.7143C15.8995 15.7143 13.885 14.8865 12.3997 13.413C10.9144 11.9395 10.08 9.94099 10.08 7.85714C10.08 7.6677 10.1559 7.48602 10.2909 7.35207C10.4259 7.21811 10.609 7.14286 10.8 7.14286C10.991 7.14286 11.1741 7.21811 11.3091 7.35207C11.4441 7.48602 11.52 7.6677 11.52 7.85714C11.52 9.56211 12.2027 11.1972 13.4179 12.4028C14.6332 13.6084 16.2814 14.2857 18 14.2857C19.7186 14.2857 21.3668 13.6084 22.5821 12.4028C23.7973 11.1972 24.48 9.56211 24.48 7.85714C24.48 7.6677 24.5559 7.48602 24.6909 7.35207C24.8259 7.21811 25.009 7.14286 25.2 7.14286C25.391 7.14286 25.5741 7.21811 25.7091 7.35207C25.8441 7.48602 25.92 7.6677 25.92 7.85714Z"
+                                              fill="#242424"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="item_img">
+                            <img src="img/item.png" alt="">
+                        </div>
+                        <div class="item-border">
+                            <div class="item_articul">Арт: 9242-130-IF-Q</div>
+                            <div class="item_name">
+                                Пальто демисезонное Драповое бежевого цвета
+                            </div>
+                            <div class="item_old_price">85 800 р.</div>
+                            <div class="item_new_price">
+                                56 960 ₽
+                                <a href="#" class="add-cart">
+                                    <svg width="36" height="30" viewBox="0 0 36 30" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M33.84 0H2.16C1.58713 0 1.03773 0.225764 0.632649 0.627628C0.227571 1.02949 0 1.57454 0 2.14286V27.8571C0 28.4255 0.227571 28.9705 0.632649 29.3724C1.03773 29.7742 1.58713 30 2.16 30H33.84C34.4129 30 34.9623 29.7742 35.3674 29.3724C35.7724 28.9705 36 28.4255 36 27.8571V2.14286C36 1.57454 35.7724 1.02949 35.3674 0.627628C34.9623 0.225764 34.4129 0 33.84 0ZM34.56 27.8571C34.56 28.0466 34.4841 28.2283 34.3491 28.3622C34.2141 28.4962 34.031 28.5714 33.84 28.5714H2.16C1.96904 28.5714 1.78591 28.4962 1.65088 28.3622C1.51586 28.2283 1.44 28.0466 1.44 27.8571V2.14286C1.44 1.95342 1.51586 1.77174 1.65088 1.63778C1.78591 1.50383 1.96904 1.42857 2.16 1.42857H33.84C34.031 1.42857 34.2141 1.50383 34.3491 1.63778C34.4841 1.77174 34.56 1.95342 34.56 2.14286V27.8571ZM25.92 7.85714C25.92 9.94099 25.0856 11.9395 23.6003 13.413C22.115 14.8865 20.1005 15.7143 18 15.7143C15.8995 15.7143 13.885 14.8865 12.3997 13.413C10.9144 11.9395 10.08 9.94099 10.08 7.85714C10.08 7.6677 10.1559 7.48602 10.2909 7.35207C10.4259 7.21811 10.609 7.14286 10.8 7.14286C10.991 7.14286 11.1741 7.21811 11.3091 7.35207C11.4441 7.48602 11.52 7.6677 11.52 7.85714C11.52 9.56211 12.2027 11.1972 13.4179 12.4028C14.6332 13.6084 16.2814 14.2857 18 14.2857C19.7186 14.2857 21.3668 13.6084 22.5821 12.4028C23.7973 11.1972 24.48 9.56211 24.48 7.85714C24.48 7.6677 24.5559 7.48602 24.6909 7.35207C24.8259 7.21811 25.009 7.14286 25.2 7.14286C25.391 7.14286 25.5741 7.21811 25.7091 7.35207C25.8441 7.48602 25.92 7.6677 25.92 7.85714Z"
+                                              fill="#242424"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="swiper-scrollbar"></div>
             </div>
         </div>
     </div>
@@ -862,7 +871,7 @@
 
         Уведомления
     </a>
-    <a href="#">
+    <a href="#" data-toggle="modal" data-target="#login">
         <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M23 11.4885C23 5.14625 17.848 0 11.5 0C5.152 0 0 5.14625 0 11.4885C0 14.9816 1.587 18.1297 4.071 20.2429C4.094 20.2659 4.117 20.2659 4.117 20.2889C4.324 20.4499 4.531 20.6109 4.761 20.7719C4.876 20.8409 4.968 20.9314 5.083 21.0234C6.98347 22.312 9.2269 23.0005 11.523 23C13.8191 23.0005 16.0625 22.312 17.963 21.0234C18.078 20.9544 18.17 20.8639 18.285 20.7934C18.492 20.6339 18.722 20.4729 18.929 20.3119C18.952 20.2889 18.975 20.2889 18.975 20.2659C21.413 18.1283 23 14.9816 23 11.4885ZM11.5 21.5524C9.338 21.5524 7.36 20.8624 5.727 19.7139C5.75 19.5299 5.796 19.3473 5.842 19.1633C5.97905 18.6647 6.18005 18.1858 6.44 17.7388C6.693 17.3018 6.992 16.9107 7.36 16.5658C7.705 16.2208 8.119 15.9002 8.533 15.6472C8.97 15.3942 9.43 15.2102 9.936 15.0722C10.4459 14.9347 10.9719 14.8656 11.5 14.8666C13.0678 14.8555 14.578 15.4569 15.709 16.5428C16.238 17.0718 16.652 17.6928 16.951 18.4043C17.112 18.8183 17.227 19.2553 17.296 19.7139C15.5986 20.9072 13.5749 21.5491 11.5 21.5524ZM7.981 10.9149C7.77834 10.4509 7.67643 9.94923 7.682 9.44294C7.682 8.93837 7.774 8.43237 7.981 7.97237C8.188 7.51237 8.464 7.09981 8.809 6.75481C9.154 6.40981 9.568 6.13525 10.028 5.92825C10.488 5.72125 10.994 5.62925 11.5 5.62925C12.029 5.62925 12.512 5.72125 12.972 5.92825C13.432 6.13525 13.846 6.41125 14.191 6.75481C14.536 7.09981 14.812 7.51381 15.019 7.97237C15.226 8.43237 15.318 8.93837 15.318 9.44294C15.318 9.97194 15.226 10.4549 15.019 10.9135C14.8192 11.3667 14.5387 11.7798 14.191 12.1325C13.8381 12.4796 13.4251 12.7597 12.972 12.9591C12.0216 13.3497 10.9554 13.3497 10.005 12.9591C9.55192 12.7597 9.13886 12.4796 8.786 12.1325C8.43786 11.7849 8.16398 11.3702 7.981 10.9135V10.9149ZM18.653 18.5423C18.653 18.4963 18.63 18.4733 18.63 18.4273C18.4038 17.7077 18.0704 17.0264 17.641 16.4062C17.2112 15.7814 16.683 15.2304 16.077 14.7746C15.6142 14.4264 15.1125 14.1331 14.582 13.9006C14.8233 13.7414 15.0469 13.5568 15.249 13.3501C15.5919 13.0115 15.893 12.6332 16.146 12.2231C16.6554 11.3862 16.9185 10.4226 16.905 9.44294C16.9121 8.71774 16.7712 7.99871 16.491 7.32981C16.2143 6.68529 15.8161 6.10011 15.318 5.60625C14.8207 5.11754 14.2354 4.72735 13.593 4.45625C12.923 4.1765 12.203 4.03613 11.477 4.04369C10.7509 4.03659 10.0309 4.17745 9.361 4.45769C8.71305 4.72821 8.12635 5.12668 7.636 5.62925C7.14731 6.12603 6.7571 6.71085 6.486 7.35281C6.20576 8.02171 6.06489 8.74074 6.072 9.46594C6.072 9.97194 6.141 10.4549 6.279 10.9135C6.417 11.3965 6.601 11.8335 6.854 12.2461C7.084 12.6601 7.406 13.0281 7.751 13.3731C7.958 13.5801 8.188 13.7626 8.441 13.9236C7.90889 14.1623 7.40703 14.4635 6.946 14.8206C6.348 15.2806 5.819 15.8312 5.382 16.4292C4.94825 17.0468 4.61449 17.7289 4.393 18.4503C4.37 18.4963 4.37 18.5423 4.37 18.5653C2.553 16.7267 1.426 14.2456 1.426 11.4885C1.426 5.95125 5.957 1.42456 11.5 1.42456C17.043 1.42456 21.574 5.95125 21.574 11.4885C21.571 14.1334 20.5208 16.6696 18.653 18.5423Z"
                   fill="#242424"/>
@@ -874,14 +883,17 @@
 
 
 <!--Modal Login-->
-<div class="modal fade" id="login" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="login" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header p-0">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2.74645 1.25355C3.63257 0.367434 5.06725 0.365432 5.9509 1.24908L42.7507 38.0489C43.6343 38.9325 43.6323 40.3672 42.7462 41.2533L41.1417 42.8578C40.2556 43.7439 38.8209 43.7459 37.9373 42.8622L1.13751 6.06247C0.253861 5.17882 0.255863 3.74414 1.14198 2.85802L2.74645 1.25355Z" fill="#242424"/>
-                        <path d="M1.08831 41.3115C0.204661 40.4278 0.206662 38.9931 1.09278 38.107L37.9954 1.20436C38.8815 0.318235 40.3162 0.316231 41.1999 1.19988L42.7999 2.79987C43.6835 3.68352 43.6815 5.11821 42.7954 6.00433L5.89276 42.907C5.00663 43.7931 3.57195 43.7951 2.6883 42.9114L1.08831 41.3115Z" fill="#242424"/>
+                        <path d="M2.74645 1.25355C3.63257 0.367434 5.06725 0.365432 5.9509 1.24908L42.7507 38.0489C43.6343 38.9325 43.6323 40.3672 42.7462 41.2533L41.1417 42.8578C40.2556 43.7439 38.8209 43.7459 37.9373 42.8622L1.13751 6.06247C0.253861 5.17882 0.255863 3.74414 1.14198 2.85802L2.74645 1.25355Z"
+                              fill="#242424"/>
+                        <path d="M1.08831 41.3115C0.204661 40.4278 0.206662 38.9931 1.09278 38.107L37.9954 1.20436C38.8815 0.318235 40.3162 0.316231 41.1999 1.19988L42.7999 2.79987C43.6835 3.68352 43.6815 5.11821 42.7954 6.00433L5.89276 42.907C5.00663 43.7931 3.57195 43.7951 2.6883 42.9114L1.08831 41.3115Z"
+                              fill="#242424"/>
                     </svg>
                 </button>
             </div>
@@ -893,18 +905,24 @@
                     <form action="">
                         <div class="form-group">
                             <label class="label" for="email">E-mail</label>
-                            <input type="email" class="form-control input" id="email" placeholder="Ваша почта" name="email">
+                            <input type="email" class="form-control input" id="email" placeholder="Ваша почта"
+                                   name="email">
                         </div>
                         <div class="form-group">
                             <label class="label" for="password">Пароль</label>
                             <div class="input-group mb-2">
-                                <input type="password" class="form-control input pr-5" id="password" placeholder="Ваш пароль" name="password">
+                                <input type="password" class="form-control input pr-5" id="password"
+                                       placeholder="Ваш пароль" name="password">
                                 <div class="input-group-prepend password-show-hide">
                                     <div class="input-group-text bg-transparent border-0 eventShowPass">
-                                        <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.8754 14.9875C23.5332 12.6156 25.002 9.9281 25.002 9.9281C25.002 9.9281 20.3145 1.33435 12.502 1.33435C11.0013 1.33952 9.51766 1.6522 8.14258 2.2531L9.3457 3.45779C10.3573 3.08928 11.4253 2.89947 12.502 2.89685C15.8145 2.89685 18.5629 4.72185 20.577 6.73591C21.5463 7.71043 22.4152 8.77986 23.1707 9.9281C23.0801 10.064 22.9801 10.214 22.866 10.3781C22.3426 11.1281 21.5691 12.1281 20.577 13.1203C20.3191 13.3781 20.0504 13.6328 19.7691 13.8797L20.8754 14.9875Z" fill="#646464"/>
-                                            <path d="M17.6513 11.7658C17.9999 10.7905 18.0645 9.73633 17.8375 8.72582C17.6104 7.71531 17.1011 6.79005 16.3687 6.05769C15.6364 5.32534 14.7111 4.81601 13.7006 4.58896C12.6901 4.36191 11.6359 4.42648 10.6606 4.77516L11.9466 6.0611C12.5471 5.97515 13.1593 6.03023 13.7348 6.22198C14.3103 6.41373 14.8332 6.73687 15.2622 7.16581C15.6911 7.59474 16.0143 8.11768 16.206 8.69318C16.3978 9.26868 16.4528 9.88093 16.3669 10.4814L17.6513 11.7658ZM13.0528 13.7955L14.3372 15.0799C13.362 15.4285 12.3077 15.4931 11.2972 15.2661C10.2867 15.039 9.36146 14.5297 8.6291 13.7973C7.89675 13.065 7.38742 12.1397 7.16037 11.1292C6.93332 10.1187 6.9979 9.06447 7.34657 8.08923L8.63251 9.37516C8.54656 9.97565 8.60164 10.5879 8.79339 11.1634C8.98514 11.7389 9.30828 12.2618 9.73722 12.6908C10.1662 13.1197 10.6891 13.4428 11.2646 13.6346C11.8401 13.8263 12.4523 13.8814 13.0528 13.7955Z" fill="#646464"/>
-                                            <path d="M5.23438 5.975C4.95312 6.225 4.68281 6.47812 4.425 6.73594C3.4557 7.71045 2.58675 8.77989 1.83125 9.92813L2.13594 10.3781C2.65937 11.1281 3.43281 12.1281 4.425 13.1203C6.43906 15.1344 9.18906 16.9594 12.5 16.9594C13.6187 16.9594 14.6719 16.7516 15.6563 16.3969L16.8594 17.6031C15.4843 18.204 14.0006 18.5167 12.5 18.5219C4.6875 18.5219 0 9.92813 0 9.92813C0 9.92813 1.46719 7.23906 4.12656 4.86875L5.23281 5.97656L5.23438 5.975ZM21.3219 19.8563L2.57188 1.10625L3.67813 0L22.4281 18.75L21.3219 19.8563Z" fill="#646464"/>
+                                        <svg width="26" height="20" viewBox="0 0 26 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.8754 14.9875C23.5332 12.6156 25.002 9.9281 25.002 9.9281C25.002 9.9281 20.3145 1.33435 12.502 1.33435C11.0013 1.33952 9.51766 1.6522 8.14258 2.2531L9.3457 3.45779C10.3573 3.08928 11.4253 2.89947 12.502 2.89685C15.8145 2.89685 18.5629 4.72185 20.577 6.73591C21.5463 7.71043 22.4152 8.77986 23.1707 9.9281C23.0801 10.064 22.9801 10.214 22.866 10.3781C22.3426 11.1281 21.5691 12.1281 20.577 13.1203C20.3191 13.3781 20.0504 13.6328 19.7691 13.8797L20.8754 14.9875Z"
+                                                  fill="#646464"/>
+                                            <path d="M17.6513 11.7658C17.9999 10.7905 18.0645 9.73633 17.8375 8.72582C17.6104 7.71531 17.1011 6.79005 16.3687 6.05769C15.6364 5.32534 14.7111 4.81601 13.7006 4.58896C12.6901 4.36191 11.6359 4.42648 10.6606 4.77516L11.9466 6.0611C12.5471 5.97515 13.1593 6.03023 13.7348 6.22198C14.3103 6.41373 14.8332 6.73687 15.2622 7.16581C15.6911 7.59474 16.0143 8.11768 16.206 8.69318C16.3978 9.26868 16.4528 9.88093 16.3669 10.4814L17.6513 11.7658ZM13.0528 13.7955L14.3372 15.0799C13.362 15.4285 12.3077 15.4931 11.2972 15.2661C10.2867 15.039 9.36146 14.5297 8.6291 13.7973C7.89675 13.065 7.38742 12.1397 7.16037 11.1292C6.93332 10.1187 6.9979 9.06447 7.34657 8.08923L8.63251 9.37516C8.54656 9.97565 8.60164 10.5879 8.79339 11.1634C8.98514 11.7389 9.30828 12.2618 9.73722 12.6908C10.1662 13.1197 10.6891 13.4428 11.2646 13.6346C11.8401 13.8263 12.4523 13.8814 13.0528 13.7955Z"
+                                                  fill="#646464"/>
+                                            <path d="M5.23438 5.975C4.95312 6.225 4.68281 6.47812 4.425 6.73594C3.4557 7.71045 2.58675 8.77989 1.83125 9.92813L2.13594 10.3781C2.65937 11.1281 3.43281 12.1281 4.425 13.1203C6.43906 15.1344 9.18906 16.9594 12.5 16.9594C13.6187 16.9594 14.6719 16.7516 15.6563 16.3969L16.8594 17.6031C15.4843 18.204 14.0006 18.5167 12.5 18.5219C4.6875 18.5219 0 9.92813 0 9.92813C0 9.92813 1.46719 7.23906 4.12656 4.86875L5.23281 5.97656L5.23438 5.975ZM21.3219 19.8563L2.57188 1.10625L3.67813 0L22.4281 18.75L21.3219 19.8563Z"
+                                                  fill="#646464"/>
                                         </svg>
                                     </div>
                                 </div>
@@ -931,7 +949,6 @@
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/jquery.sticky.js"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
-<script src="js/main.js?v=----"></script>
+<script src="js/main.js?v=----21232"></script>
 </body>
 </html>
