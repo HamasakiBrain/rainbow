@@ -913,6 +913,7 @@ label.custom-radio
   padding: 15px
   font-family: $nunito
   height: 100%
+  max-height: 53px
   font-style: normal
   background-color: transparent
   border-radius: 0
@@ -1208,6 +1209,209 @@ label.custom-radio
       transition: .3s all
       opacity: 1
       height: 100%
+
+.profile
+  &-links
+    height: max-content
+    background-color: #F8F8F8
+    padding: 20px 20px 20px 7px
+    border: 1px solid #EFEFEF
+    border-right: none
+    a
+      display: block
+      margin-bottom: 20px
+      font-family: $nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 20px
+      line-height: 27px
+      color: #BFBFBF
+      padding-left: 13px
+      &:last-child
+        margin-bottom: 0
+      &.active
+        position: relative
+        padding-left: 34px
+        color: $dark
+        &:before
+          width: 26px
+          height: 1px
+          background-color: $dark
+          position: absolute
+          top: 50%
+          left: 0
+          content: ""
+
+  &-wrapper
+    border: 1px solid #EFEFEF
+    background-color: #F8F8F8
+  &-content
+    padding: 110px 0 100px 0
+  &_info
+    margin-left: 19px
+    padding: 20px 0
+  &-user
+    &_name
+      font-family: $palatino
+      font-style: normal
+      font-weight: 400
+      font-size: 36px
+      line-height: 49px
+      color: #000000
+    &_withASS
+      font-family: $nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 14px
+      line-height: 19px
+      color: #646464
+      margin-top: 5px
+    &_items
+      margin-top: 15px
+      font-family: $nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 22px
+      color: #242424
+      b
+        margin-left: 5px
+        color: $dark
+        font-weight: 700
+  &_change_photo
+    padding-right: 40px
+  &_edit
+    &-wrapper
+      padding: 30px 0 35px 20px
+      border: 1px solid #EFEFEF
+      border-top: none
+  &_name
+    &-form
+      display: flex
+      align-items: center
+      font-family: $palatino
+      font-style: normal
+      font-weight: 400
+      font-size: 36px
+      line-height: 49px
+      color: #000000
+      a
+        height: 39px
+        margin-left: 60px
+        display: block
+        font-family: $nunito
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        text-decoration-line: underline !important
+        color: #646464
+  &_forms
+    margin-top: 20px
+    display: flex
+    flex-wrap: wrap
+    &-username, &-email, &-ml20
+      max-width: 493px
+      width: 100%
+    &-house
+      max-width: 171px
+      width: 100%
+    &-sex
+      margin-left: 20px
+      label
+        display: block
+      .select-sex
+        display: flex
+      .select-sex button
+        min-width: 163px
+        margin-right: 20px
+        display: flex
+        max-width: max-content
+        align-items: center
+        justify-content: center
+        height: 53px
+        font-family: $nunito
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 22px
+        color: $dark
+        background-color: transparent
+        border: 1px solid #EFEFEF
+        &:focus, &.active
+          color: #FFFFFF
+          background-color: $dark
+          border: none
+        &:last-child
+            margin-right: 0
+        svg
+          margin-right: 15px
+    &-birthday, &-save
+      margin-left: 20px
+      input
+       width: 236px
+    &-save
+      margin-bottom: 0
+      padding-top: 26px
+    &-savebutton
+      width: 200px
+      padding: 14.5px 0
+      max-width: 100%
+      border: none
+      background: $dark
+      color: #FFFFFF
+    &-ml20, &-house
+      margin-left: 20px
+    &-payment
+      p
+        font-family: $nunito
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 22px
+        color: $dark
+        max-width: 456px
+    &-cards
+      margin-top: 35px
+      &_wrapper
+        display: flex
+        align-items: center
+        max-width: 574px
+        width: 100%
+        margin-bottom: 25px
+        &:last-child
+          margin-bottom: 0
+
+
+
+.custom-wrapper-cards
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  a
+    font-weight: 300
+    font-size: 14px
+    line-height: 19px
+    text-decoration: underline !important
+    text-decoration-skip-ink: none
+    color: #646464
+.muted
+  font-weight: 300
+  font-size: 16px
+  line-height: 22px
+  color: #8A8A8A
+.change_photo
+  min-width: 200px
+  max-width: max-content
+  padding: 14px 0
+  display: flex
+  justify-content: center
+  align-items: center
+  border: 1px solid $dark
+  color: $dark
+  &:hover
+    background-color: $dark
+    color: #FFFFFF
 
 
 //Адаптив
